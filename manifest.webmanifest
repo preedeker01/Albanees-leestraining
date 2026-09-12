@@ -1,0 +1,18 @@
+{
+  "name": "Albanese leestraining",
+  "short_name": "Albanees",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#123487",
+  "description": "Oefenen met Russische letters en veelgebruikte Russische woorden, met Nederlandse vertaling.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

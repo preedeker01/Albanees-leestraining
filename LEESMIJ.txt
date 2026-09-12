@@ -1,0 +1,6 @@
+Russische leestraining
+
+Upload alle bestanden uit deze map naar de root van dezelfde GitHub Pages repository.
+De app haalt bij de eerste start de frequentielijst van Russische woorden op en bewaart 400 woorden per lengte (3 t/m 7) lokaal op het apparaat.
+De Russische-Nederlandse vertalingen worden daarna op de achtergrond aangevuld en lokaal bewaard.
+Daarna blijven de geselecteerde woorden beschikbaar zonder opnieuw de frequentielijst te hoeven downloaden.
