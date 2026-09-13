@@ -132,6 +132,14 @@ button{font:inherit;touch-action:manipulation}.screen{display:none;width:100%;he
 
 
 .voice-row{display:flex;align-items:center;justify-content:center;gap:8px;font-size:.82rem;font-weight:700}.voice-row select{font:inherit;padding:5px 8px;border:1px solid #bbb;border-radius:9px;background:#fff}.voice-row button{font:inherit;padding:5px 9px;border:0;border-radius:9px;background:#e8eef8}
+
+/* iPhone/iPad Safari: veilige schermhoogte en safe-area onderaan. */
+@supports (-webkit-touch-callout:none){
+ .screen,.home,.exercise{height:-webkit-fill-available}
+ .home{padding-bottom:max(10px,env(safe-area-inset-bottom))}
+ .exercise{padding-bottom:max(6px,env(safe-area-inset-bottom))}
+ button{-webkit-user-select:none;user-select:none}
+}
 </style>
 </head>
 <body>
@@ -225,14 +233,50 @@ document.getElementById('voiceTest').onclick=async()=>{globalStopped=false;await
 fetch('./audio-map.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).then(m=>audioMap=m).catch(()=>{audioMap=null});
 function chooseVoices(){const v=speechSynthesis.getVoices();albanianVoice=v.find(x=>(x.lang||'').toLowerCase()==='sq-al')||v.find(x=>(x.lang||'').toLowerCase().startsWith('sq'))||v.find(x=>/albanian|shqip/i.test(x.name||''))||null;dutchVoice=v.find(x=>(x.lang||'').toLowerCase()==='nl-nl')||v.find(x=>(x.lang||'').toLowerCase().startsWith('nl'))||null}
 chooseVoices();speechSynthesis.addEventListener('voiceschanged',chooseVoices);
-function stopSpeech(){speechSynthesis.cancel();if(currentAudio){try{currentAudio.pause();currentAudio.currentTime=0}catch(e){}currentAudio=null}}
+/* Safari/iOS: hergebruik één audio-element. Een nieuw Audio-object bij ieder fragment
+   kan op iPhone na de eerste gebruikersactie door de autoplaybeveiliging worden geblokkeerd. */
+const iosAudio=document.createElement('audio');
+iosAudio.preload='auto';
+iosAudio.setAttribute('playsinline','');
+iosAudio.setAttribute('webkit-playsinline','');
+document.body.appendChild(iosAudio);
+let audioPlayToken=0;
+function stopSpeech(){
+ audioPlayToken++;
+ speechSynthesis.cancel();
+ if(currentAudio){try{currentAudio.pause();currentAudio.currentTime=0}catch(e){}currentAudio=null}
+ try{iosAudio.pause();iosAudio.removeAttribute('src');iosAudio.load()}catch(e){}
+}
 function fallbackAlbanian(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='sq-AL';if(albanianVoice)u.voice=albanianVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
 async function ensureAudioMap(){if(audioMap)return audioMap;try{const r=await fetch('./audio-map.json');if(r.ok)audioMap=await r.json()}catch(e){}return audioMap}
 async function speakAlbanian(t){
  const m=await ensureAudioMap();const rel=m&&m.files&&m.files[t]&&m.files[t][neuralVoice];
  if(!rel)return fallbackAlbanian(t);
- return new Promise(resolve=>{stopSpeech();const a=new Audio('./'+rel);currentAudio=a;a.onended=()=>{if(currentAudio===a)currentAudio=null;resolve()};a.onerror=()=>{if(currentAudio===a)currentAudio=null;fallbackAlbanian(t).then(resolve)};a.play().catch(()=>fallbackAlbanian(t).then(resolve))})
+ const myToken=++audioPlayToken;
+ return new Promise(resolve=>{
+   speechSynthesis.cancel();
+   const a=iosAudio;currentAudio=a;
+   const done=()=>{a.onended=null;a.onerror=null;if(currentAudio===a)currentAudio=null;resolve()};
+   a.onended=done;
+   a.onerror=()=>{if(myToken!==audioPlayToken)return done();done();fallbackAlbanian(t)};
+   a.src='./'+rel;a.currentTime=0;
+   const pp=a.play();
+   if(pp&&typeof pp.catch==='function')pp.catch(()=>{if(myToken!==audioPlayToken)return done();done();fallbackAlbanian(t)});
+ })
 }
+/* Ontgrendel audio bij de eerste echte tik; nodig voor standalone Safari/PWA op iOS. */
+function unlockIOSAudio(){
+ try{
+  iosAudio.muted=true;
+  const p=iosAudio.play();
+  if(p&&p.then)p.then(()=>{iosAudio.pause();iosAudio.muted=false}).catch(()=>{iosAudio.muted=false});
+  else iosAudio.muted=false;
+ }catch(e){iosAudio.muted=false}
+ document.removeEventListener('touchend',unlockIOSAudio,true);
+ document.removeEventListener('click',unlockIOSAudio,true);
+}
+document.addEventListener('touchend',unlockIOSAudio,true);
+document.addEventListener('click',unlockIOSAudio,true);
 function speakDutch(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='nl-NL';if(dutchVoice)u.voice=dutchVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
 async function speakThree(t){stopSpeech();await sleep(70);for(let i=0;i<3;i++){if(globalStopped)break;await speakAlbanian(t);if(i<2&&!globalStopped)await sleep(230)}}
 function showScreen(id){stopSpeech();globalStopped=true;stopLetterSearch();stopWordSearch();stopSentenceSearch();document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active')}
