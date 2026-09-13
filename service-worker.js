@@ -1,4 +1,4 @@
-const CACHE_NAME='albanese-leestraining-v6-neural-audio';
+const CACHE_NAME='albanese-leestraining-v8-750woorden';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./SpeechOn.wav','./SpeechOff.wav','./audio-map.json'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(ASSETS))));
 self.addEventListener('message',e=>{if(e.data&&e.data.type==='SKIP_WAITING')self.skipWaiting()});

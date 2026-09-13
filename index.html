@@ -142,8 +142,8 @@ button{font:inherit;touch-action:manipulation}.screen{display:none;width:100%;he
     <button class="home-choice blue" onclick="openWords(3)"><span class="label">3 letters</span><span class="tiles"><span class="tile">u</span><span class="tile">j</span><span class="tile">ë</span></span></button>
     <button class="home-choice orange" onclick="openWords(4)"><span class="label">4 letters</span><span class="tiles"><span class="tile">b</span><span class="tile">u</span><span class="tile">k</span><span class="tile">ë</span></span></button>
     <button class="home-choice purple" onclick="openWords(5)"><span class="label">5 letters</span><span class="tiles"><span class="tile">l</span><span class="tile">i</span><span class="tile">b</span><span class="tile">ë</span><span class="tile">r</span></span></button>
-    <button class="home-choice red" onclick="openWords(6)"><span class="label">6 letters</span><span class="tiles"><span class="tile">s</span><span class="tile">h</span><span class="tile">q</span><span class="tile">i</span><span class="tile">p</span><span class="tile">e</span></span></button>
-    <button class="home-choice teal" onclick="openWords(7)"><span class="label">7 letters</span><span class="tiles"><span class="tile">s</span><span class="tile">h</span><span class="tile">k</span><span class="tile">o</span><span class="tile">l</span><span class="tile">l</span><span class="tile">ë</span></span></button>
+    <button class="home-choice red" onclick="openWords(6)"><span class="label">6 letters</span><span class="tiles"><span class="tile">sh</span><span class="tile">q</span><span class="tile">i</span><span class="tile">p</span><span class="tile">e</span></span></button>
+    <button class="home-choice teal" onclick="openWords(7)"><span class="label">7 letters</span><span class="tiles"><span class="tile">sh</span><span class="tile">k</span><span class="tile">o</span><span class="tile">ll</span><span class="tile">ë</span></span></button>
     <button class="home-choice gold sentence-home" onclick="openSentences()"><span class="label">Korte zinnen</span><span class="tiles"><span class="tile">Unë</span><span class="tile">shkoj</span><span class="tile">në shtëpi</span></span></button>
   </div>
   <div class="voice-row"><label for="neuralVoice">Albanese stem:</label><select id="neuralVoice"><option value="anila">Anila (vrouw)</option><option value="ilir">Ilir (man)</option></select><button id="voiceTest" type="button">▶ Test</button></div>
@@ -179,12 +179,41 @@ const lengths=[3,4,5,6,7];
 let wordData=embeddedAlbanianWords;
 let translations={...embeddedAlbanianTranslations};
 let dictLoading=false;
-function cpLen(s){return [...s].length}
+const albanianDigraphs=['dh','gj','ll','nj','rr','sh','th','xh','zh'];
+function cpLen(s){
+ s=(s||'').toLocaleLowerCase('sq-AL');
+ let n=0;
+ for(let i=0;i<s.length;){
+   const two=s.slice(i,i+2);
+   if(albanianDigraphs.includes(two)){n++;i+=2}else{n++;i++}
+ }
+ return n;
+}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 function setStatus(t){const e=document.getElementById('dataStatus');if(e)e.textContent=t}
 function hasCompleteWordData(d){return !!d&&lengths.every(n=>Array.isArray(d[n])&&d[n].length>=12)}
-async function ensureWordData(){wordData=embeddedAlbanianWords;translations={...embeddedAlbanianTranslations};setStatus('Albanese woordenlijst gereed');return true}
+let word500Loaded=false;
+async function ensureWordData(){
+ if(word500Loaded)return true;
+ try{
+   const r=await fetch('./word-data-750.json',{cache:'no-cache'});
+   if(r.ok){
+     const d=await r.json();
+     if(d&&d.words&&hasCompleteWordData(d.words)){
+       wordData=d.words;
+       translations={...embeddedAlbanianTranslations,...(d.translations||{})};
+       word500Loaded=true;
+       setStatus('750 frequente Albanese woorden gereed');
+       return true;
+     }
+   }
+ }catch(e){}
+ wordData=embeddedAlbanianWords;
+ translations={...embeddedAlbanianTranslations};
+ setStatus('Basiswoordenlijst gereed — word-data-750.json ontbreekt nog');
+ return true;
+}
 async function refreshWordData(){wordData=embeddedAlbanianWords;translations={...embeddedAlbanianTranslations};setStatus('Albanese woordenlijst gereed');return true}
 let albanianVoice=null,dutchVoice=null;
 let audioMap=null,currentAudio=null;
