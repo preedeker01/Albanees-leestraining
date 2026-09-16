@@ -248,7 +248,7 @@ let audioPlayToken=0;
 function stopSpeech(){
  audioPlayToken++;
  speechSynthesis.cancel();
- if(currentAudio){try{currentAudio.pause();currentAudio.currentTime=0}catch(e){}currentAudio=null}
+ if(currentAudio){try{const finish=currentAudio.onended;currentAudio.pause();currentAudio.currentTime=0;if(typeof finish==='function')finish()}catch(e){}currentAudio=null}
  try{iosAudio.pause();iosAudio.removeAttribute('src');iosAudio.load()}catch(e){}
 }
 function fallbackAlbanian(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='sq-AL';if(albanianVoice)u.voice=albanianVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
@@ -282,7 +282,7 @@ function unlockIOSAudio(){
 document.addEventListener('touchend',unlockIOSAudio,true);
 document.addEventListener('click',unlockIOSAudio,true);
 function speakDutch(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='nl-NL';if(dutchVoice)u.voice=dutchVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
-async function speakThree(t){stopSpeech();await sleep(70);for(let i=0;i<3;i++){if(globalStopped)break;await speakAlbanian(t);if(i<2&&!globalStopped)await sleep(230)}}
+async function speakThree(t){const run=(speakThree._run=(speakThree._run||0)+1);stopSpeech();await sleep(70);for(let i=0;i<3;i++){if(globalStopped||run!==speakThree._run)break;await speakAlbanian(t);if(i<2&&!globalStopped&&run===speakThree._run)await sleep(230)}}
 function showScreen(id){stopSpeech();globalStopped=true;stopLetterSearch();stopWordSearch();stopSentenceSearch();document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active')}
 let globalStopped=false;
 
