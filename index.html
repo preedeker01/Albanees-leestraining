@@ -361,7 +361,13 @@ function cancelGuidedSentence(){
 async function playGuidedMapped(text,run){
  if(run!==guidedSentenceRun||globalStopped)return false;
  const m=await ensureAudioMap();
- const rel=m&&m.files&&m.files[text]&&m.files[text][neuralVoice];
+ // Probeer eerst exact zoals het woord in de zin staat.
+ // Als dat niet bestaat, gebruik dezelfde opname met kleine beginletter.
+ // Zo kan bijvoorbeeld "Kur" de bestaande opname "kur" gebruiken.
+ const exact=text;
+ const lower=text.toLocaleLowerCase('sq-AL');
+ const entry=m&&m.files&&(m.files[exact]||m.files[lower]);
+ const rel=entry&&entry[neuralVoice];
  if(!rel){
    document.getElementById('sentenceHint').textContent='Audio ontbreekt voor: '+text;
    return false;
