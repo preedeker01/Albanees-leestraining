@@ -267,10 +267,26 @@ function stopSpeech(){
  try{iosAudio.pause();iosAudio.removeAttribute('src');iosAudio.load()}catch(e){}
 }
 function fallbackAlbanian(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='sq-AL';if(albanianVoice)u.voice=albanianVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
-async function ensureAudioMap(){if(audioMap)return audioMap;try{const r=await fetch('./audio-map.json');if(r.ok)audioMap=await r.json()}catch(e){}return audioMap}
+async function ensureAudioMap(){if(audioMap)return audioMap;try{const r=await fetch('./audio-map.json',{cache:'no-store'});if(r.ok)audioMap=await r.json()}catch(e){}return audioMap}
+function audioKey(s){
+ return String(s||'').normalize('NFC').toLocaleLowerCase('sq-AL');
+}
+function findAudioEntry(m,text){
+ if(!m||!m.files)return null;
+ // 1 exact, 2 NFC exact, 3 hoofdletter-onafhankelijk + Unicode-normalisatie.
+ if(m.files[text])return m.files[text];
+ const n=String(text||'').normalize('NFC');
+ if(m.files[n])return m.files[n];
+ const wanted=audioKey(n);
+ for(const k of Object.keys(m.files)){
+   if(audioKey(k)===wanted)return m.files[k];
+ }
+ return null;
+}
 async function speakAlbanian(t){
  const m=await ensureAudioMap();
- const rel=m&&m.files&&m.files[t]&&m.files[t][neuralVoice];
+ const entry=findAudioEntry(m,t);
+ const rel=entry&&entry[neuralVoice];
  if(!rel){
    const h=document.getElementById('sentenceHint')||document.getElementById('status');
    if(h)h.textContent='Audio ontbreekt voor: '+t;
@@ -364,9 +380,7 @@ async function playGuidedMapped(text,run){
  // Probeer eerst exact zoals het woord in de zin staat.
  // Als dat niet bestaat, gebruik dezelfde opname met kleine beginletter.
  // Zo kan bijvoorbeeld "Kur" de bestaande opname "kur" gebruiken.
- const exact=text;
- const lower=text.toLocaleLowerCase('sq-AL');
- const entry=m&&m.files&&(m.files[exact]||m.files[lower]);
+ const entry=findAudioEntry(m,text);
  const rel=entry&&entry[neuralVoice];
  if(!rel){
    document.getElementById('sentenceHint').textContent='Audio ontbreekt voor: '+text;
