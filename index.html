@@ -4,10 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="theme-color" content="#123487">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Albanees">
-<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
 <title>Albanese leestraining</title>
 <link rel="manifest" href="manifest.webmanifest">
 <style>
@@ -168,10 +164,15 @@ button{font:inherit;touch-action:manipulation}.screen{display:none;width:100%;he
 
 
 <style>
-#sentenceFocus.sentence-focus{display:none;align-items:center;justify-content:center;text-align:center;min-height:clamp(82px,16vh,150px);margin:5px 0 8px;padding:7px 10px;border:3px solid #222;border-radius:18px;background:#fff;font-size:clamp(3rem,11vw,6.2rem);font-weight:800;line-height:1.04;overflow-wrap:anywhere}
+#sentenceFocus.sentence-focus{display:none;align-items:center;justify-content:center;text-align:center;
+min-height:clamp(82px,16vh,150px);margin:5px 0 8px;padding:7px 10px;border:3px solid #222;
+border-radius:18px;background:#fff;font-size:clamp(3rem,11vw,6.2rem);font-weight:800;line-height:1.04}
 #sentenceFocus.sentence-focus.show{display:flex}
 #sentenceFocus.sentence-focus.full{font-size:clamp(1.7rem,6.5vw,3.6rem)}
-@media (orientation:landscape){#sentenceFocus.sentence-focus{min-height:clamp(64px,19vh,115px);font-size:clamp(2.3rem,8vh,4.5rem);margin:3px 0 5px}#sentenceFocus.sentence-focus.full{font-size:clamp(1.4rem,5.2vh,2.7rem)}}
+@media (orientation:landscape){
+#sentenceFocus.sentence-focus{min-height:64px;font-size:clamp(2.3rem,8vh,4.5rem);margin:3px 0 5px}
+#sentenceFocus.sentence-focus.full{font-size:clamp(1.4rem,5.2vh,2.7rem)}
+}
 </style>
 <section id="sentencesScreen" class="screen"><button class="global-home" onclick="showScreen('homeScreen')" title="Start">⌂</button><div class="exercise"><h1>Korte Albanese zinnen</h1><p id="sentenceHint" class="hint">Tik op een zin om hem 3× te horen.</p><div id="sentenceFocus" class="sentence-focus" aria-live="polite"></div><div id="sentenceGrid" class="sentence-grid"></div><div class="controls"><button id="sentencePlay">▶<br>Voorbeeld</button><button id="sentenceStop">■<br>Stop</button><button id="sentenceMix">↻<br>Mengen</button><button id="sentenceSearch">🔎<br>Zoeken</button></div><button id="sentenceTranslate" class="translate">🌐 Vertalen</button></div></section>
 
@@ -255,7 +256,7 @@ let audioPlayToken=0;
 function stopSpeech(){
  audioPlayToken++;
  speechSynthesis.cancel();
- if(currentAudio){try{const finish=currentAudio.onended;currentAudio.pause();currentAudio.currentTime=0;if(typeof finish==='function')finish()}catch(e){}currentAudio=null}
+ if(currentAudio){try{currentAudio.pause();currentAudio.currentTime=0}catch(e){}currentAudio=null}
  try{iosAudio.pause();iosAudio.removeAttribute('src');iosAudio.load()}catch(e){}
 }
 function fallbackAlbanian(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='sq-AL';if(albanianVoice)u.voice=albanianVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
@@ -289,7 +290,15 @@ function unlockIOSAudio(){
 document.addEventListener('touchend',unlockIOSAudio,true);
 document.addEventListener('click',unlockIOSAudio,true);
 function speakDutch(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='nl-NL';if(dutchVoice)u.voice=dutchVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
-async function speakThree(t){const run=(speakThree._run=(speakThree._run||0)+1);stopSpeech();await sleep(70);for(let i=0;i<3;i++){if(globalStopped||run!==speakThree._run)break;await speakAlbanian(t);if(i<2&&!globalStopped&&run===speakThree._run)await sleep(230)}}
+async function speakThree(t){
+ const run=(speakThree._run=(speakThree._run||0)+1);
+ stopSpeech();await sleep(70);
+ for(let i=0;i<3;i++){
+  if(globalStopped||run!==speakThree._run)break;
+  await speakAlbanian(t);
+  if(i<2&&!globalStopped&&run===speakThree._run)await sleep(230);
+ }
+}
 function showScreen(id){stopSpeech();globalStopped=true;stopLetterSearch();stopWordSearch();stopSentenceSearch();document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active')}
 let globalStopped=false;
 
@@ -345,7 +354,6 @@ function renderSentences(){
  })
 }
 function openSentences(){
- cancelGuidedSentence();
  sentenceTranslateMode=false;document.getElementById('sentenceTranslate').classList.remove('on');
  stopSentenceSearch();globalStopped=true;mixSentences();
  document.getElementById('sentenceHint').textContent='Tik op een zin om hem 3× te horen.';
@@ -353,31 +361,46 @@ function openSentences(){
 }
 let guidedSentenceRun=0;
 function sentenceWord(w){return w.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}'’\-]+$/gu,'')}
-function showSentenceFocus(text,full=false){const el=document.getElementById('sentenceFocus');el.textContent=text;el.classList.add('show');el.classList.toggle('full',full)}
+function showSentenceFocus(text,full=false){
+ const el=document.getElementById('sentenceFocus');if(!el)return;
+ el.textContent=text;el.classList.add('show');el.classList.toggle('full',full);
+}
 function hideSentenceFocus(){const el=document.getElementById('sentenceFocus');if(el){el.textContent='';el.classList.remove('show','full')}}
-function cancelGuidedSentence(){guidedSentenceRun++;stopSpeech();hideSentenceFocus()}
-async function guidedSentence(text){
+function cancelGuidedSentence(){guidedSentenceRun++;speakThree._run=(speakThree._run||0)+1;stopSpeech();hideSentenceFocus()}
+async function guidedAlbanianSentence(text){
  const run=++guidedSentenceRun;globalStopped=false;stopSpeech();
  const words=text.split(/\s+/).map(sentenceWord).filter(Boolean);
- // 1: woord groot tonen, circa 1 seconde wachten, daarna uitspreken.
+ // langzaam: eerst zien, ~1 seconde wachten, dan exact dat woord uitspreken
  for(const w of words){
-  if(run!==guidedSentenceRun||globalStopped)return;showSentenceFocus(w);await sleep(950);
-  if(run!==guidedSentenceRun||globalStopped)return;await speakAlbanian(w);await sleep(160);
+  if(run!==guidedSentenceRun||globalStopped)return;
+  showSentenceFocus(w);await sleep(950);
+  if(run!==guidedSentenceRun||globalStopped)return;
+  await speakAlbanian(w);await sleep(160);
  }
- // 2: woorden vlot achter elkaar.
+ // daarna vlot woord voor woord
  for(const w of words){
-  if(run!==guidedSentenceRun||globalStopped)return;showSentenceFocus(w);await sleep(100);
-  if(run!==guidedSentenceRun||globalStopped)return;await speakAlbanian(w);
+  if(run!==guidedSentenceRun||globalStopped)return;
+  showSentenceFocus(w);await sleep(100);
+  if(run!==guidedSentenceRun||globalStopped)return;
+  await speakAlbanian(w);
  }
- // 3: volledige zin tonen en uitspreken.
- if(run!==guidedSentenceRun||globalStopped)return;showSentenceFocus(text,true);await sleep(300);
- if(run!==guidedSentenceRun||globalStopped)return;await speakAlbanian(text);
+ // ten slotte exact de gekozen volledige zin
+ if(run!==guidedSentenceRun||globalStopped)return;
+ showSentenceFocus(text,true);await sleep(300);
+ if(run!==guidedSentenceRun||globalStopped)return;
+ await speakAlbanian(text);
 }
 async function sentenceTap(x,b){
- cancelGuidedSentence();globalStopped=false;
- if(sentenceTranslateMode){stopSpeech();document.getElementById('sentenceHint').textContent=x.ru+' = '+x.nl;await speakAlbanian(x.ru);return}
- if(sentenceSearch){if(x.ru===sentenceTarget){playSound('goodSound');b.classList.add('correct');await sleep(360);if(sentenceSearch)offerSentence()}else{playSound('badSound');b.classList.add('wrong');setTimeout(()=>b.classList.remove('wrong'),420)}return}
- globalStopped=false;clearSentenceMarks();b.classList.add('active');await guidedSentence(x.ru);b.classList.remove('active')
+ cancelGuidedSentence();globalStopped=false;clearSentenceMarks();
+ if(sentenceSearch){
+  if(x.ru===sentenceTarget){playSound('goodSound');b.classList.add('correct');await sleep(360);if(sentenceSearch)offerSentence()}
+  else{playSound('badSound');b.classList.add('wrong');setTimeout(()=>b.classList.remove('wrong'),420)}
+  return
+ }
+ b.classList.add('active');
+ if(sentenceTranslateMode)document.getElementById('sentenceHint').textContent=x.ru+' = '+x.nl;
+ await guidedAlbanianSentence(x.ru);
+ b.classList.remove('active');
 }
 async function offerSentence(){
  clearSentenceMarks();let choices=sentenceCurrent.filter(x=>x.ru!==sentenceLast);const x=choices[Math.floor(Math.random()*choices.length)]||sentenceCurrent[0];
@@ -387,7 +410,7 @@ document.getElementById('sentencePlay').onclick=async()=>{sentenceTranslateMode=
 document.getElementById('sentenceStop').onclick=()=>{cancelGuidedSentence();globalStopped=true;stopSpeech();stopSentenceSearch();clearSentenceMarks();document.getElementById('sentenceHint').textContent='Gestopt.'}
 document.getElementById('sentenceMix').onclick=()=>{cancelGuidedSentence();globalStopped=true;stopSpeech();stopSentenceSearch();mixSentences();document.getElementById('sentenceHint').textContent=sentenceTranslateMode?'Vertalen staat aan: tik op een zin.':'Tik op een zin om hem 3× te horen.'}
 document.getElementById('sentenceSearch').onclick=async()=>{cancelGuidedSentence();sentenceTranslateMode=false;document.getElementById('sentenceTranslate').classList.remove('on');renderSentences();stopSpeech();clearSentenceMarks();if(sentenceSearch&&sentenceTarget){globalStopped=false;document.getElementById('sentenceHint').textContent='Luister nog eens en zoek dezelfde zin.';await sleep(70);await speakAlbanian(sentenceTarget);return}stopSentenceSearch();sentenceSearch=true;sentenceLast=null;await offerSentence()}
-document.getElementById('sentenceTranslate').onclick=()=>{cancelGuidedSentence();stopSpeech();globalStopped=true;stopSentenceSearch();clearSentenceMarks();sentenceTranslateMode=!sentenceTranslateMode;document.getElementById('sentenceTranslate').classList.toggle('on',sentenceTranslateMode);renderSentences();document.getElementById('sentenceHint').textContent=sentenceTranslateMode?'Vertalen staat aan: Nederlandse vertalingen staan onder de zinnen. Tik op een zin voor Albaneese uitspraak.':'Tik op een zin om hem 3× te horen.'}
+document.getElementById('sentenceTranslate').onclick=()=>{cancelGuidedSentence();stopSpeech();globalStopped=true;stopSentenceSearch();clearSentenceMarks();sentenceTranslateMode=!sentenceTranslateMode;document.getElementById('sentenceTranslate').classList.toggle('on',sentenceTranslateMode);renderSentences();document.getElementById('sentenceHint').textContent=sentenceTranslateMode?'Vertalen staat aan: Nederlandse vertaling staat onder de zin. Tik op een zin voor de Albanese leesoefening.':'Tik op een zin om hem 3× te horen.'}
 
 /* PWA updates */
 if('serviceWorker'in navigator){let reg;navigator.serviceWorker.register('./service-worker.js').then(r=>{reg=r;if(r.waiting)showUpdate(r.waiting);r.addEventListener('updatefound',()=>{const nw=r.installing;if(!nw)return;nw.addEventListener('statechange',()=>{if(nw.state==='installed'&&navigator.serviceWorker.controller)showUpdate(nw)})})});let refreshing=false;navigator.serviceWorker.addEventListener('controllerchange',()=>{if(refreshing)return;refreshing=true;location.reload()});function showUpdate(worker){document.getElementById('updateBox').style.display='flex';document.getElementById('updateBtn').onclick=()=>worker.postMessage({type:'SKIP_WAITING'})}}
