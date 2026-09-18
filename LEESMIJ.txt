@@ -1,6 +1,16 @@
-Russische leestraining
+ALBANESE UPDATE v10
 
-Upload alle bestanden uit deze map naar de root van dezelfde GitHub Pages repository.
-De app haalt bij de eerste start de frequentielijst van Russische woorden op en bewaart 400 woorden per lengte (3 t/m 7) lokaal op het apparaat.
-De Russische-Nederlandse vertalingen worden daarna op de achtergrond aangevuld en lokaal bewaard.
-Daarna blijven de geselecteerde woorden beschikbaar zonder opnieuw de frequentielijst te hoeven downloaden.
+Vervang in de lokale GitHub-map ALLEEN:
+1. index.html
+2. service-worker.js
+
+Daarna in GitHub Desktop:
+- Summary: Albanese zinnen fix v10
+- Commit to main
+- Push origin
+
+Wacht daarna tot GitHub Pages klaar is.
+Open de Albanese app. De nieuwe service worker heeft een nieuw versienummer,
+zodat de bestaande PWA de update kan herkennen.
+
+Als de app al open stond: sluit hem volledig en open hem opnieuw.
