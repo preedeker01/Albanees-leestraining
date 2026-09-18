@@ -1,0 +1,18 @@
+CACHEFIX ALBANESE LEESTRAINING
+
+Vervang in de hoofdmap van Albanees-leestraining alleen:
+1. index.html
+2. service-worker.js
+
+Daarna GitHub Desktop:
+- Commit to main
+- Push origin
+
+De nieuwe service worker:
+- gebruikt een nieuw cacheversienummer;
+- verwijdert oude caches;
+- haalt index.html, audio-map.json en word-data-750.json eerst opnieuw van GitHub;
+- forceert een nieuwe service-worker-updatecontrole.
+
+De index zoekt audio hoofdletter-onafhankelijk en Unicode-genormaliseerd:
+Është kan daardoor dezelfde opname gebruiken als është.
