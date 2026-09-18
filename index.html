@@ -269,18 +269,43 @@ function stopSpeech(){
 function fallbackAlbanian(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='sq-AL';if(albanianVoice)u.voice=albanianVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
 async function ensureAudioMap(){if(audioMap)return audioMap;try{const r=await fetch('./audio-map.json');if(r.ok)audioMap=await r.json()}catch(e){}return audioMap}
 async function speakAlbanian(t){
- const m=await ensureAudioMap();const rel=m&&m.files&&m.files[t]&&m.files[t][neuralVoice];
- if(!rel)return fallbackAlbanian(t);
+ const m=await ensureAudioMap();
+ const rel=m&&m.files&&m.files[t]&&m.files[t][neuralVoice];
+ if(!rel){
+   const h=document.getElementById('sentenceHint')||document.getElementById('status');
+   if(h)h.textContent='Audio ontbreekt voor: '+t;
+   console.warn('Geen Azure-audio gevonden voor:',t,'stem:',neuralVoice);
+   return false;
+ }
  const myToken=++audioPlayToken;
  return new Promise(resolve=>{
    speechSynthesis.cancel();
    const a=iosAudio;currentAudio=a;
-   const done=()=>{a.onended=null;a.onerror=null;if(currentAudio===a)currentAudio=null;resolve()};
-   a.onended=done;
-   a.onerror=()=>{if(myToken!==audioPlayToken)return done();done();fallbackAlbanian(t)};
+   let finished=false;
+   const done=(ok=true)=>{
+     if(finished)return;
+     finished=true;
+     a.onended=null;a.onerror=null;
+     if(currentAudio===a)currentAudio=null;
+     resolve(ok);
+   };
+   a.onended=()=>done(true);
+   a.onerror=()=>{
+     if(myToken!==audioPlayToken)return done(false);
+     const h=document.getElementById('sentenceHint')||document.getElementById('status');
+     if(h)h.textContent='Audiobestand kan niet worden afgespeeld: '+t;
+     console.warn('Azure-audio kan niet worden afgespeeld:',rel);
+     done(false);
+   };
    a.src='./'+rel;a.currentTime=0;
    const pp=a.play();
-   if(pp&&typeof pp.catch==='function')pp.catch(()=>{if(myToken!==audioPlayToken)return done();done();fallbackAlbanian(t)});
+   if(pp&&typeof pp.catch==='function')pp.catch(()=>{
+     if(myToken!==audioPlayToken)return done(false);
+     const h=document.getElementById('sentenceHint')||document.getElementById('status');
+     if(h)h.textContent='Audiobestand kan niet worden afgespeeld: '+t;
+     console.warn('Azure-audio afspelen mislukt:',rel);
+     done(false);
+   });
  })
 }
 /* Ontgrendel audio bij de eerste echte tik; nodig voor standalone Safari/PWA op iOS. */
