@@ -242,7 +242,7 @@ const voiceSelect=document.getElementById('neuralVoice');
 voiceSelect.value=neuralVoice;
 voiceSelect.onchange=()=>{neuralVoice=voiceSelect.value;localStorage.setItem('albanianNeuralVoiceV1',neuralVoice);stopSpeech()};
 document.getElementById('voiceTest').onclick=async()=>{globalStopped=false;await speakAlbanian('Përshëndetje!')};
-fetch('./audio-map.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).then(m=>audioMap=m).catch(()=>{audioMap=null});
+fetch('./audio-map.json?v=11',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(m=>audioMap=m).catch(()=>{audioMap=null});
 function chooseVoices(){const v=speechSynthesis.getVoices();albanianVoice=v.find(x=>(x.lang||'').toLowerCase()==='sq-al')||v.find(x=>(x.lang||'').toLowerCase().startsWith('sq'))||v.find(x=>/albanian|shqip/i.test(x.name||''))||null;dutchVoice=v.find(x=>(x.lang||'').toLowerCase()==='nl-nl')||v.find(x=>(x.lang||'').toLowerCase().startsWith('nl'))||null}
 chooseVoices();speechSynthesis.addEventListener('voiceschanged',chooseVoices);
 /* Safari/iOS: hergebruik één audio-element. Een nieuw Audio-object bij ieder fragment
@@ -260,7 +260,7 @@ function stopSpeech(){
  try{iosAudio.pause();iosAudio.removeAttribute('src');iosAudio.load()}catch(e){}
 }
 function fallbackAlbanian(t){return new Promise(r=>{const u=new SpeechSynthesisUtterance(t);u.lang='sq-AL';if(albanianVoice)u.voice=albanianVoice;u.rate=.58;u.pitch=1;u.onend=r;u.onerror=r;speechSynthesis.speak(u)})}
-async function ensureAudioMap(){if(audioMap)return audioMap;try{const r=await fetch('./audio-map.json');if(r.ok)audioMap=await r.json()}catch(e){}return audioMap}
+async function ensureAudioMap(){if(audioMap)return audioMap;try{const r=await fetch('./audio-map.json?v=11',{cache:'no-store'});if(r.ok)audioMap=await r.json()}catch(e){}return audioMap}
 async function speakAlbanian(t){
  const m=await ensureAudioMap();const rel=m&&m.files&&m.files[t]&&m.files[t][neuralVoice];
  if(!rel)return fallbackAlbanian(t);
@@ -359,6 +359,29 @@ function openSentences(){
  document.getElementById('sentenceHint').textContent='Tik op een zin om hem 3× te horen.';
  showScreen('sentencesScreen')
 }
+
+async function speakAlbanianAudioOnly(t){
+ const m=await ensureAudioMap();
+ const rel=m&&m.files&&m.files[t]&&m.files[t][neuralVoice];
+ if(!rel){
+   console.warn('Geen neural audio voor:',t);
+   const h=document.getElementById('sentenceHint');
+   if(h)h.textContent='Audio ontbreekt voor: '+t;
+   return false;
+ }
+ const myToken=++audioPlayToken;
+ return new Promise(resolve=>{
+   speechSynthesis.cancel();
+   const a=iosAudio;currentAudio=a;
+   const done=()=>{a.onended=null;a.onerror=null;if(currentAudio===a)currentAudio=null;resolve(true)};
+   a.onended=done;
+   a.onerror=()=>{console.warn('Audiofout:',rel);done()};
+   a.src='./'+rel;a.currentTime=0;
+   const pp=a.play();
+   if(pp&&typeof pp.catch==='function')pp.catch(()=>done());
+ });
+}
+
 let guidedSentenceRun=0;
 function sentenceWord(w){return w.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}'’\-]+$/gu,'')}
 function showSentenceFocus(text,full=false){
@@ -375,20 +398,20 @@ async function guidedAlbanianSentence(text){
   if(run!==guidedSentenceRun||globalStopped)return;
   showSentenceFocus(w);await sleep(950);
   if(run!==guidedSentenceRun||globalStopped)return;
-  await speakAlbanian(w);await sleep(160);
+  await speakAlbanianAudioOnly(w);await sleep(160);
  }
  // daarna vlot woord voor woord
  for(const w of words){
   if(run!==guidedSentenceRun||globalStopped)return;
   showSentenceFocus(w);await sleep(100);
   if(run!==guidedSentenceRun||globalStopped)return;
-  await speakAlbanian(w);
+  await speakAlbanianAudioOnly(w);
  }
  // ten slotte exact de gekozen volledige zin
  if(run!==guidedSentenceRun||globalStopped)return;
  showSentenceFocus(text,true);await sleep(300);
  if(run!==guidedSentenceRun||globalStopped)return;
- await speakAlbanian(text);
+ await speakAlbanianAudioOnly(text);
 }
 async function sentenceTap(x,b){
  cancelGuidedSentence();globalStopped=false;clearSentenceMarks();

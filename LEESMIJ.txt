@@ -1,16 +1,25 @@
-ALBANESE UPDATE v10
+ALBANEES – DEFINITIEVE ZINNENAUDIO-REPARATIE v11
 
-Vervang in de lokale GitHub-map ALLEEN:
-1. index.html
-2. service-worker.js
+Deze set repareert de verkeerde/door elkaar lopende zinnenaudio.
 
-Daarna in GitHub Desktop:
-- Summary: Albanese zinnen fix v10
-- Commit to main
-- Push origin
+Er zijn 631 unieke audio-items nodig:
+- losse woorden uit de 300 zinnen
+- alle 300 volledige zinnen
 
-Wacht daarna tot GitHub Pages klaar is.
-Open de Albanese app. De nieuwe service worker heeft een nieuw versienummer,
-zodat de bestaande PWA de update kan herkennen.
+WERKWIJZE
+1. Pak deze ZIP uit.
+2. Kopieer ALLE bestanden uit de ZIP naar de hoofdmap van je lokale GitHub-project
+   Albanees-leestraining (waar audio-map.json en de map audio al staan).
+3. Kopieer in Azure Speech KEY 1 naar het Windows klembord.
+4. Dubbelklik START_REPARATIE_v11.bat.
+5. Wacht tot KLAAR verschijnt.
+6. Open GitHub Desktop.
+7. Summary: Albanese zinnen audio reparatie v11
+8. Commit to main -> Push origin.
+9. Wacht tot GitHub Pages klaar is.
+10. Sluit de app volledig en open hem opnieuw.
 
-Als de app al open stond: sluit hem volledig en open hem opnieuw.
+BELANGRIJK
+De zinnenoefening gebruikt na deze update GEEN browserstem meer als reserve.
+Daardoor kan Anila niet meer ineens door een mannenstem worden vervangen.
+Ieder woord en iedere volledige zin krijgt bovendien een nieuw, uniek MP3-nummer.
