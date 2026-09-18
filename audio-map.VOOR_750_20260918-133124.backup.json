@@ -1,0 +1,2758 @@
+﻿{
+    "region":  "northeurope",
+    "voices":  {
+                   "anila":  "sq-AL-AnilaNeural",
+                   "ilir":  "sq-AL-IlirNeural"
+               },
+    "version":  2,
+    "files":  {
+                  "pyes":  {
+                               "anila":  "audio/anila/0103.mp3",
+                               "ilir":  "audio/ilir/0103.mp3"
+                           },
+                  "i":  {
+                            "anila":  "audio/anila/0013.mp3",
+                            "ilir":  "audio/ilir/0013.mp3"
+                        },
+                  "rezervuar":  {
+                                    "anila":  "audio/anila/0651.mp3",
+                                    "ilir":  "audio/ilir/0651.mp3"
+                                },
+                  "Kam një rezervim.":  {
+                                            "anila":  "audio/anila/0402.mp3",
+                                            "ilir":  "audio/ilir/0402.mp3"
+                                        },
+                  "Kjo është nëna.":  {
+                                          "anila":  "audio/anila/0204.mp3",
+                                          "ilir":  "audio/ilir/0204.mp3"
+                                      },
+                  "autobus":  {
+                                  "anila":  "audio/anila/0179.mp3",
+                                  "ilir":  "audio/ilir/0179.mp3"
+                              },
+                  "makinë":  {
+                                 "anila":  "audio/anila/0148.mp3",
+                                 "ilir":  "audio/ilir/0148.mp3"
+                             },
+                  "blej":  {
+                               "anila":  "audio/anila/0072.mp3",
+                               "ilir":  "audio/ilir/0072.mp3"
+                           },
+                  "Shkoj në shkollë.":  {
+                                            "anila":  "audio/anila/0233.mp3",
+                                            "ilir":  "audio/ilir/0233.mp3"
+                                        },
+                  "ujë":  {
+                              "anila":  "audio/anila/0046.mp3",
+                              "ilir":  "audio/ilir/0046.mp3"
+                          },
+                  "Sigurisht":  {
+                                    "anila":  "audio/anila/0704.mp3",
+                                    "ilir":  "audio/ilir/0704.mp3"
+                                },
+                  "pse":  {
+                              "anila":  "audio/anila/0070.mp3",
+                              "ilir":  "audio/ilir/0070.mp3"
+                          },
+                  "Më":  {
+                             "anila":  "audio/anila/0574.mp3",
+                             "ilir":  "audio/ilir/0574.mp3"
+                         },
+                  "Udhëtim":  {
+                                  "anila":  "audio/anila/0711.mp3",
+                                  "ilir":  "audio/ilir/0711.mp3"
+                              },
+                  "Kam një shtëpi.":  {
+                                          "anila":  "audio/anila/0208.mp3",
+                                          "ilir":  "audio/ilir/0208.mp3"
+                                      },
+                  "Numri është dy.":  {
+                                          "anila":  "audio/anila/0285.mp3",
+                                          "ilir":  "audio/ilir/0285.mp3"
+                                      },
+                  "ose":  {
+                              "anila":  "audio/anila/0043.mp3",
+                              "ilir":  "audio/ilir/0043.mp3"
+                          },
+                  "l":  {
+                            "anila":  "audio/anila/0016.mp3",
+                            "ilir":  "audio/ilir/0016.mp3"
+                        },
+                  "Mundem.":  {
+                                  "anila":  "audio/anila/0460.mp3",
+                                  "ilir":  "audio/ilir/0460.mp3"
+                              },
+                  "Macja është në shtëpi.":  {
+                                                 "anila":  "audio/anila/0443.mp3",
+                                                 "ilir":  "audio/ilir/0443.mp3"
+                                             },
+                  "Mirëmbrëma!":  {
+                                      "anila":  "audio/anila/0188.mp3",
+                                      "ilir":  "audio/ilir/0188.mp3"
+                                  },
+                  "doktor":  {
+                                 "anila":  "audio/anila/0158.mp3",
+                                 "ilir":  "audio/ilir/0158.mp3"
+                             },
+                  "Mund të hyj?":  {
+                                       "anila":  "audio/anila/0452.mp3",
+                                       "ilir":  "audio/ilir/0452.mp3"
+                                   },
+                  "ndalon":  {
+                                 "anila":  "audio/anila/0642.mp3",
+                                 "ilir":  "audio/ilir/0642.mp3"
+                             },
+                  "Dua të mësoj.":  {
+                                        "anila":  "audio/anila/0449.mp3",
+                                        "ilir":  "audio/ilir/0449.mp3"
+                                    },
+                  "Unë lexoj.":  {
+                                     "anila":  "audio/anila/0236.mp3",
+                                     "ilir":  "audio/ilir/0236.mp3"
+                                 },
+                  "majtë":  {
+                                "anila":  "audio/anila/0627.mp3",
+                                "ilir":  "audio/ilir/0627.mp3"
+                            },
+                  "mal":  {
+                              "anila":  "audio/anila/0048.mp3",
+                              "ilir":  "audio/ilir/0048.mp3"
+                          },
+                  "Babai im është atje.":  {
+                                               "anila":  "audio/anila/0436.mp3",
+                                               "ilir":  "audio/ilir/0436.mp3"
+                                           },
+                  "Një biletë për Tiranë.":  {
+                                                 "anila":  "audio/anila/0393.mp3",
+                                                 "ilir":  "audio/ilir/0393.mp3"
+                                             },
+                  "banane":  {
+                                 "anila":  "audio/anila/0151.mp3",
+                                 "ilir":  "audio/ilir/0151.mp3"
+                             },
+                  "Keni ujë?":  {
+                                    "anila":  "audio/anila/0254.mp3",
+                                    "ilir":  "audio/ilir/0254.mp3"
+                                },
+                  "Dritarja":  {
+                                   "anila":  "audio/anila/0692.mp3",
+                                   "ilir":  "audio/ilir/0692.mp3"
+                               },
+                  "pak":  {
+                              "anila":  "audio/anila/0554.mp3",
+                              "ilir":  "audio/ilir/0554.mp3"
+                          },
+                  "verdhë":  {
+                                 "anila":  "audio/anila/0156.mp3",
+                                 "ilir":  "audio/ilir/0156.mp3"
+                             },
+                  "Ku është spitali?":  {
+                                            "anila":  "audio/anila/0352.mp3",
+                                            "ilir":  "audio/ilir/0352.mp3"
+                                        },
+                  "drekë":  {
+                                "anila":  "audio/anila/0602.mp3",
+                                "ilir":  "audio/ilir/0602.mp3"
+                            },
+                  "Pranë":  {
+                                "anila":  "audio/anila/0631.mp3",
+                                "ilir":  "audio/ilir/0631.mp3"
+                            },
+                  "fshat":  {
+                                "anila":  "audio/anila/0115.mp3",
+                                "ilir":  "audio/ilir/0115.mp3"
+                            },
+                  "çantë":  {
+                                "anila":  "audio/anila/0119.mp3",
+                                "ilir":  "audio/ilir/0119.mp3"
+                            },
+                  "Ku është hoteli?":  {
+                                           "anila":  "audio/anila/0259.mp3",
+                                           "ilir":  "audio/ilir/0259.mp3"
+                                       },
+                  "ngrënë":  {
+                                 "anila":  "audio/anila/0601.mp3",
+                                 "ilir":  "audio/ilir/0601.mp3"
+                             },
+                  "Po mësoj shqip.":  {
+                                          "anila":  "audio/anila/0315.mp3",
+                                          "ilir":  "audio/ilir/0315.mp3"
+                                      },
+                  "vogël":  {
+                                "anila":  "audio/anila/0664.mp3",
+                                "ilir":  "audio/ilir/0664.mp3"
+                            },
+                  "pastër":  {
+                                 "anila":  "audio/anila/0663.mp3",
+                                 "ilir":  "audio/ilir/0663.mp3"
+                             },
+                  "blu":  {
+                              "anila":  "audio/anila/0523.mp3",
+                              "ilir":  "audio/ilir/0523.mp3"
+                          },
+                  "drejt":  {
+                                "anila":  "audio/anila/0531.mp3",
+                                "ilir":  "audio/ilir/0531.mp3"
+                            },
+                  "mund":  {
+                               "anila":  "audio/anila/0104.mp3",
+                               "ilir":  "audio/ilir/0104.mp3"
+                           },
+                  "Dua banane.":  {
+                                      "anila":  "audio/anila/0275.mp3",
+                                      "ilir":  "audio/ilir/0275.mp3"
+                                  },
+                  "Sa kushton?":  {
+                                      "anila":  "audio/anila/0372.mp3",
+                                      "ilir":  "audio/ilir/0372.mp3"
+                                  },
+                  "qendra":  {
+                                 "anila":  "audio/anila/0621.mp3",
+                                 "ilir":  "audio/ilir/0621.mp3"
+                             },
+                  "tani":  {
+                               "anila":  "audio/anila/0071.mp3",
+                               "ilir":  "audio/ilir/0071.mp3"
+                           },
+                  "Kjo është makinë.":  {
+                                            "anila":  "audio/anila/0246.mp3",
+                                            "ilir":  "audio/ilir/0246.mp3"
+                                        },
+                  "djalë":  {
+                                "anila":  "audio/anila/0125.mp3",
+                                "ilir":  "audio/ilir/0125.mp3"
+                            },
+                  "yll":  {
+                              "anila":  "audio/anila/0052.mp3",
+                              "ilir":  "audio/ilir/0052.mp3"
+                          },
+                  "majtas":  {
+                                 "anila":  "audio/anila/0533.mp3",
+                                 "ilir":  "audio/ilir/0533.mp3"
+                             },
+                  "Dua mish.":  {
+                                    "anila":  "audio/anila/0267.mp3",
+                                    "ilir":  "audio/ilir/0267.mp3"
+                                },
+                  "Çfarë keni për të ngrënë?":  {
+                                                    "anila":  "audio/anila/0360.mp3",
+                                                    "ilir":  "audio/ilir/0360.mp3"
+                                                },
+                  "Dera është e mbyllur.":  {
+                                                "anila":  "audio/anila/0445.mp3",
+                                                "ilir":  "audio/ilir/0445.mp3"
+                                            },
+                  "sheqer":  {
+                                 "anila":  "audio/anila/0152.mp3",
+                                 "ilir":  "audio/ilir/0152.mp3"
+                             },
+                  "thuhet":  {
+                                 "anila":  "audio/anila/0562.mp3",
+                                 "ilir":  "audio/ilir/0562.mp3"
+                             },
+                  "Jam në shtëpi.":  {
+                                         "anila":  "audio/anila/0226.mp3",
+                                         "ilir":  "audio/ilir/0226.mp3"
+                                     },
+                  "tre":  {
+                              "anila":  "audio/anila/0068.mp3",
+                              "ilir":  "audio/ilir/0068.mp3"
+                          },
+                  "të":  {
+                             "anila":  "audio/anila/0514.mp3",
+                             "ilir":  "audio/ilir/0514.mp3"
+                         },
+                  "hotel":  {
+                                "anila":  "audio/anila/0113.mp3",
+                                "ilir":  "audio/ilir/0113.mp3"
+                            },
+                  "Lexoj një libër.":  {
+                                           "anila":  "audio/anila/0316.mp3",
+                                           "ilir":  "audio/ilir/0316.mp3"
+                                       },
+                  "them":  {
+                               "anila":  "audio/anila/0102.mp3",
+                               "ilir":  "audio/ilir/0102.mp3"
+                           },
+                  "mike":  {
+                               "anila":  "audio/anila/0076.mp3",
+                               "ilir":  "audio/ilir/0076.mp3"
+                           },
+                  "spital":  {
+                                 "anila":  "audio/anila/0159.mp3",
+                                 "ilir":  "audio/ilir/0159.mp3"
+                             },
+                  "motër":  {
+                                "anila":  "audio/anila/0124.mp3",
+                                "ilir":  "audio/ilir/0124.mp3"
+                            },
+                  "Përballë hotelit.":  {
+                                            "anila":  "audio/anila/0388.mp3",
+                                            "ilir":  "audio/ilir/0388.mp3"
+                                        },
+                  "Urime":  {
+                                "anila":  "audio/anila/0707.mp3",
+                                "ilir":  "audio/ilir/0707.mp3"
+                            },
+                  "Ku është dhoma ime?":  {
+                                              "anila":  "audio/anila/0408.mp3",
+                                              "ilir":  "audio/ilir/0408.mp3"
+                                          },
+                  "afër":  {
+                               "anila":  "audio/anila/0089.mp3",
+                               "ilir":  "audio/ilir/0089.mp3"
+                           },
+                  "Më duhet një peshqir.":  {
+                                                "anila":  "audio/anila/0419.mp3",
+                                                "ilir":  "audio/ilir/0419.mp3"
+                                            },
+                  "unë":  {
+                              "anila":  "audio/anila/0040.mp3",
+                              "ilir":  "audio/ilir/0040.mp3"
+                          },
+                  "kur":  {
+                              "anila":  "audio/anila/0069.mp3",
+                              "ilir":  "audio/ilir/0069.mp3"
+                          },
+                  "madhe":  {
+                                "anila":  "audio/anila/0665.mp3",
+                                "ilir":  "audio/ilir/0665.mp3"
+                            },
+                  "Kjo është shtëpi.":  {
+                                            "anila":  "audio/anila/0245.mp3",
+                                            "ilir":  "audio/ilir/0245.mp3"
+                                        },
+                  "c":  {
+                            "anila":  "audio/anila/0003.mp3",
+                            "ilir":  "audio/ilir/0003.mp3"
+                        },
+                  "banjë":  {
+                                "anila":  "audio/anila/0142.mp3",
+                                "ilir":  "audio/ilir/0142.mp3"
+                            },
+                  "fëmijë":  {
+                                 "anila":  "audio/anila/0160.mp3",
+                                 "ilir":  "audio/ilir/0160.mp3"
+                             },
+                  "k":  {
+                            "anila":  "audio/anila/0015.mp3",
+                            "ilir":  "audio/ilir/0015.mp3"
+                        },
+                  "Kthehuni djathtas.":  {
+                                             "anila":  "audio/anila/0263.mp3",
+                                             "ilir":  "audio/ilir/0263.mp3"
+                                         },
+                  "mjekun":  {
+                                 "anila":  "audio/anila/0596.mp3",
+                                 "ilir":  "audio/ilir/0596.mp3"
+                             },
+                  "shtatë":  {
+                                 "anila":  "audio/anila/0166.mp3",
+                                 "ilir":  "audio/ilir/0166.mp3"
+                             },
+                  "Kthehuni":  {
+                                   "anila":  "audio/anila/0532.mp3",
+                                   "ilir":  "audio/ilir/0532.mp3"
+                               },
+                  "Dua një dhomë.":  {
+                                         "anila":  "audio/anila/0404.mp3",
+                                         "ilir":  "audio/ilir/0404.mp3"
+                                     },
+                  "ditë":  {
+                               "anila":  "audio/anila/0085.mp3",
+                               "ilir":  "audio/ilir/0085.mp3"
+                           },
+                  "djathë":  {
+                                 "anila":  "audio/anila/0150.mp3",
+                                 "ilir":  "audio/ilir/0150.mp3"
+                             },
+                  "Dua të punoj.":  {
+                                        "anila":  "audio/anila/0448.mp3",
+                                        "ilir":  "audio/ilir/0448.mp3"
+                                    },
+                  "Kjo është familja ime.":  {
+                                                 "anila":  "audio/anila/0427.mp3",
+                                                 "ilir":  "audio/ilir/0427.mp3"
+                                             },
+                  "Unë ha djathë.":  {
+                                         "anila":  "audio/anila/0270.mp3",
+                                         "ilir":  "audio/ilir/0270.mp3"
+                                     },
+                  "ë":  {
+                            "anila":  "audio/anila/0008.mp3",
+                            "ilir":  "audio/ilir/0008.mp3"
+                        },
+                  "ll":  {
+                             "anila":  "audio/anila/0017.mp3",
+                             "ilir":  "audio/ilir/0017.mp3"
+                         },
+                  "A është ky vend i lirë?":  {
+                                                  "anila":  "audio/anila/0398.mp3",
+                                                  "ilir":  "audio/ilir/0398.mp3"
+                                              },
+                  "çfarë":  {
+                                "anila":  "audio/anila/0145.mp3",
+                                "ilir":  "audio/ilir/0145.mp3"
+                            },
+                  "pëlqen":  {
+                                 "anila":  "audio/anila/0604.mp3",
+                                 "ilir":  "audio/ilir/0604.mp3"
+                             },
+                  "Keni":  {
+                               "anila":  "audio/anila/0600.mp3",
+                               "ilir":  "audio/ilir/0600.mp3"
+                           },
+                  "telefon":  {
+                                  "anila":  "audio/anila/0168.mp3",
+                                  "ilir":  "audio/ilir/0168.mp3"
+                              },
+                  "Kam një qen.":  {
+                                       "anila":  "audio/anila/0213.mp3",
+                                       "ilir":  "audio/ilir/0213.mp3"
+                                   },
+                  "Si quhesh?":  {
+                                     "anila":  "audio/anila/0195.mp3",
+                                     "ilir":  "audio/ilir/0195.mp3"
+                                 },
+                  "katër":  {
+                                "anila":  "audio/anila/0143.mp3",
+                                "ilir":  "audio/ilir/0143.mp3"
+                            },
+                  "Qielli":  {
+                                 "anila":  "audio/anila/0522.mp3",
+                                 "ilir":  "audio/ilir/0522.mp3"
+                             },
+                  "mbyllur":  {
+                                  "anila":  "audio/anila/0691.mp3",
+                                  "ilir":  "audio/ilir/0691.mp3"
+                              },
+                  "Po ti?":  {
+                                 "anila":  "audio/anila/0301.mp3",
+                                 "ilir":  "audio/ilir/0301.mp3"
+                             },
+                  "je":  {
+                             "anila":  "audio/anila/0496.mp3",
+                             "ilir":  "audio/ilir/0496.mp3"
+                         },
+                  "Dua të ha.":  {
+                                     "anila":  "audio/anila/0218.mp3",
+                                     "ilir":  "audio/ilir/0218.mp3"
+                                 },
+                  "Duhet të pres.":  {
+                                         "anila":  "audio/anila/0458.mp3",
+                                         "ilir":  "audio/ilir/0458.mp3"
+                                     },
+                  "fjali":  {
+                                "anila":  "audio/anila/0141.mp3",
+                                "ilir":  "audio/ilir/0141.mp3"
+                            },
+                  "Ku është posta?":  {
+                                          "anila":  "audio/anila/0381.mp3",
+                                          "ilir":  "audio/ilir/0381.mp3"
+                                      },
+                  "Unë ha mish.":  {
+                                       "anila":  "audio/anila/0266.mp3",
+                                       "ilir":  "audio/ilir/0266.mp3"
+                                   },
+                  "telefoni":  {
+                                   "anila":  "audio/anila/0685.mp3",
+                                   "ilir":  "audio/ilir/0685.mp3"
+                               },
+                  "Eja këtu.":  {
+                                    "anila":  "audio/anila/0325.mp3",
+                                    "ilir":  "audio/ilir/0325.mp3"
+                                },
+                  "koka":  {
+                               "anila":  "audio/anila/0591.mp3",
+                               "ilir":  "audio/ilir/0591.mp3"
+                           },
+                  "larg":  {
+                               "anila":  "audio/anila/0090.mp3",
+                               "ilir":  "audio/ilir/0090.mp3"
+                           },
+                  "Duhet të punoj.":  {
+                                          "anila":  "audio/anila/0457.mp3",
+                                          "ilir":  "audio/ilir/0457.mp3"
+                                      },
+                  "Kam nevojë për mjek.":  {
+                                               "anila":  "audio/anila/0351.mp3",
+                                               "ilir":  "audio/ilir/0351.mp3"
+                                           },
+                  "Ky autobus shkon në qendër.":  {
+                                                      "anila":  "audio/anila/0397.mp3",
+                                                      "ilir":  "audio/ilir/0397.mp3"
+                                                  },
+                  "tualeti":  {
+                                  "anila":  "audio/anila/0502.mp3",
+                                  "ilir":  "audio/ilir/0502.mp3"
+                              },
+                  "Ana":  {
+                              "anila":  "audio/anila/0549.mp3",
+                              "ilir":  "audio/ilir/0549.mp3"
+                          },
+                  "dh":  {
+                             "anila":  "audio/anila/0006.mp3",
+                             "ilir":  "audio/ilir/0006.mp3"
+                         },
+                  "Ndihem":  {
+                                 "anila":  "audio/anila/0589.mp3",
+                                 "ilir":  "audio/ilir/0589.mp3"
+                             },
+                  "Më pëlqen kjo.":  {
+                                         "anila":  "audio/anila/0364.mp3",
+                                         "ilir":  "audio/ilir/0364.mp3"
+                                     },
+                  "biletë":  {
+                                 "anila":  "audio/anila/0149.mp3",
+                                 "ilir":  "audio/ilir/0149.mp3"
+                             },
+                  "Përballë":  {
+                                   "anila":  "audio/anila/0629.mp3",
+                                   "ilir":  "audio/ilir/0629.mp3"
+                               },
+                  "kam":  {
+                              "anila":  "audio/anila/0055.mp3",
+                              "ilir":  "audio/ilir/0055.mp3"
+                          },
+                  "Dua një taksi.":  {
+                                         "anila":  "audio/anila/0399.mp3",
+                                         "ilir":  "audio/ilir/0399.mp3"
+                                     },
+                  "Unë pi kafe.":  {
+                                       "anila":  "audio/anila/0225.mp3",
+                                       "ilir":  "audio/ilir/0225.mp3"
+                                   },
+                  "mik":  {
+                              "anila":  "audio/anila/0049.mp3",
+                              "ilir":  "audio/ilir/0049.mp3"
+                          },
+                  "Ditë të mbarë!":  {
+                                         "anila":  "audio/anila/0483.mp3",
+                                         "ilir":  "audio/ilir/0483.mp3"
+                                     },
+                  "banka":  {
+                                "anila":  "audio/anila/0622.mp3",
+                                "ilir":  "audio/ilir/0622.mp3"
+                            },
+                  "Është ora dy.":  {
+                                        "anila":  "audio/anila/0333.mp3",
+                                        "ilir":  "audio/ilir/0333.mp3"
+                                    },
+                  "Tiranë":  {
+                                 "anila":  "audio/anila/0637.mp3",
+                                 "ilir":  "audio/ilir/0637.mp3"
+                             },
+                  "bie":  {
+                              "anila":  "audio/anila/0518.mp3",
+                              "ilir":  "audio/ilir/0518.mp3"
+                          },
+                  "Unë jam në shtëpi.":  {
+                                             "anila":  "audio/anila/0294.mp3",
+                                             "ilir":  "audio/ilir/0294.mp3"
+                                         },
+                  "djathtas":  {
+                                   "anila":  "audio/anila/0534.mp3",
+                                   "ilir":  "audio/ilir/0534.mp3"
+                               },
+                  "Numri është dhjetë.":  {
+                                              "anila":  "audio/anila/0293.mp3",
+                                              "ilir":  "audio/ilir/0293.mp3"
+                                          },
+                  "Paguaj me para.":  {
+                                          "anila":  "audio/anila/0371.mp3",
+                                          "ilir":  "audio/ilir/0371.mp3"
+                                      },
+                  "mbyll":  {
+                                "anila":  "audio/anila/0132.mp3",
+                                "ilir":  "audio/ilir/0132.mp3"
+                            },
+                  "Jam nga Shqipëria.":  {
+                                             "anila":  "audio/anila/0305.mp3",
+                                             "ilir":  "audio/ilir/0305.mp3"
+                                         },
+                  "libër":  {
+                                "anila":  "audio/anila/0117.mp3",
+                                "ilir":  "audio/ilir/0117.mp3"
+                            },
+                  "Unë jam në park.":  {
+                                           "anila":  "audio/anila/0295.mp3",
+                                           "ilir":  "audio/ilir/0295.mp3"
+                                       },
+                  "Më duhet ndihmë.":  {
+                                           "anila":  "audio/anila/0201.mp3",
+                                           "ilir":  "audio/ilir/0201.mp3"
+                                       },
+                  "Ndihem mirë.":  {
+                                       "anila":  "audio/anila/0348.mp3",
+                                       "ilir":  "audio/ilir/0348.mp3"
+                                   },
+                  "Kur niset autobusi?":  {
+                                              "anila":  "audio/anila/0394.mp3",
+                                              "ilir":  "audio/ilir/0394.mp3"
+                                          },
+                  "net":  {
+                              "anila":  "audio/anila/0653.mp3",
+                              "ilir":  "audio/ilir/0653.mp3"
+                          },
+                  "supë":  {
+                               "anila":  "audio/anila/0084.mp3",
+                               "ilir":  "audio/ilir/0084.mp3"
+                           },
+                  "mollë":  {
+                                "anila":  "audio/anila/0120.mp3",
+                                "ilir":  "audio/ilir/0120.mp3"
+                            },
+                  "burrë":  {
+                                "anila":  "audio/anila/0127.mp3",
+                                "ilir":  "audio/ilir/0127.mp3"
+                            },
+                  "çelës":  {
+                                "anila":  "audio/anila/0118.mp3",
+                                "ilir":  "audio/ilir/0118.mp3"
+                            },
+                  "mirë":  {
+                               "anila":  "audio/anila/0088.mp3",
+                               "ilir":  "audio/ilir/0088.mp3"
+                           },
+                  "mëngjes":  {
+                                  "anila":  "audio/anila/0180.mp3",
+                                  "ilir":  "audio/ilir/0180.mp3"
+                              },
+                  "Nga jeni?":  {
+                                    "anila":  "audio/anila/0304.mp3",
+                                    "ilir":  "audio/ilir/0304.mp3"
+                                },
+                  "Përshëndetje!":  {
+                                        "anila":  "audio/anila/0185.mp3",
+                                        "ilir":  "audio/ilir/0185.mp3"
+                                    },
+                  "kafe":  {
+                               "anila":  "audio/anila/0080.mp3",
+                               "ilir":  "audio/ilir/0080.mp3"
+                           },
+                  "birrë":  {
+                                "anila":  "audio/anila/0597.mp3",
+                                "ilir":  "audio/ilir/0597.mp3"
+                            },
+                  "Kjo është derë.":  {
+                                          "anila":  "audio/anila/0248.mp3",
+                                          "ilir":  "audio/ilir/0248.mp3"
+                                      },
+                  "mbarë":  {
+                                "anila":  "audio/anila/0712.mp3",
+                                "ilir":  "audio/ilir/0712.mp3"
+                            },
+                  "e":  {
+                            "anila":  "audio/anila/0007.mp3",
+                            "ilir":  "audio/ilir/0007.mp3"
+                        },
+                  "punoj":  {
+                                "anila":  "audio/anila/0129.mp3",
+                                "ilir":  "audio/ilir/0129.mp3"
+                            },
+                  "Është këtu afër.":  {
+                                           "anila":  "audio/anila/0384.mp3",
+                                           "ilir":  "audio/ilir/0384.mp3"
+                                       },
+                  "Ku është aeroporti?":  {
+                                              "anila":  "audio/anila/0382.mp3",
+                                              "ilir":  "audio/ilir/0382.mp3"
+                                          },
+                  "emër":  {
+                               "anila":  "audio/anila/0093.mp3",
+                               "ilir":  "audio/ilir/0093.mp3"
+                           },
+                  "vëllai":  {
+                                 "anila":  "audio/anila/0512.mp3",
+                                 "ilir":  "audio/ilir/0512.mp3"
+                             },
+                  "Sot është e martë.":  {
+                                             "anila":  "audio/anila/0337.mp3",
+                                             "ilir":  "audio/ilir/0337.mp3"
+                                         },
+                  "Jam në punë.":  {
+                                       "anila":  "audio/anila/0227.mp3",
+                                       "ilir":  "audio/ilir/0227.mp3"
+                                   },
+                  "Jam i lodhur.":  {
+                                        "anila":  "audio/anila/0244.mp3",
+                                        "ilir":  "audio/ilir/0244.mp3"
+                                    },
+                  "Unë ha bukë.":  {
+                                       "anila":  "audio/anila/0220.mp3",
+                                       "ilir":  "audio/ilir/0220.mp3"
+                                   },
+                  "Jetoj":  {
+                                "anila":  "audio/anila/0552.mp3",
+                                "ilir":  "audio/ilir/0552.mp3"
+                            },
+                  "Është vonë.":  {
+                                      "anila":  "audio/anila/0335.mp3",
+                                      "ilir":  "audio/ilir/0335.mp3"
+                                  },
+                  "Dhoma është e pastër.":  {
+                                                "anila":  "audio/anila/0413.mp3",
+                                                "ilir":  "audio/ilir/0413.mp3"
+                                            },
+                  "shumë":  {
+                                "anila":  "audio/anila/0702.mp3",
+                                "ilir":  "audio/ilir/0702.mp3"
+                            },
+                  "Si je?":  {
+                                 "anila":  "audio/anila/0193.mp3",
+                                 "ilir":  "audio/ilir/0193.mp3"
+                             },
+                  "Një kafe, ju lutem.":  {
+                                              "anila":  "audio/anila/0256.mp3",
+                                              "ilir":  "audio/ilir/0256.mp3"
+                                          },
+                  "Numri është tre.":  {
+                                           "anila":  "audio/anila/0286.mp3",
+                                           "ilir":  "audio/ilir/0286.mp3"
+                                       },
+                  "Pa sheqer, ju lutem.":  {
+                                               "anila":  "audio/anila/0358.mp3",
+                                               "ilir":  "audio/ilir/0358.mp3"
+                                           },
+                  "Sot ka diell.":  {
+                                        "anila":  "audio/anila/0420.mp3",
+                                        "ilir":  "audio/ilir/0420.mp3"
+                                    },
+                  "u":  {
+                            "anila":  "audio/anila/0030.mp3",
+                            "ilir":  "audio/ilir/0030.mp3"
+                        },
+                  "Dua darkë.":  {
+                                     "anila":  "audio/anila/0363.mp3",
+                                     "ilir":  "audio/ilir/0363.mp3"
+                                 },
+                  "Më fal.":  {
+                                  "anila":  "audio/anila/0192.mp3",
+                                  "ilir":  "audio/ilir/0192.mp3"
+                              },
+                  "dritaren":  {
+                                   "anila":  "audio/anila/0568.mp3",
+                                   "ilir":  "audio/ilir/0568.mp3"
+                               },
+                  "Dua të fle.":  {
+                                      "anila":  "audio/anila/0451.mp3",
+                                      "ilir":  "audio/ilir/0451.mp3"
+                                  },
+                  "Nuk e di.":  {
+                                    "anila":  "audio/anila/0198.mp3",
+                                    "ilir":  "audio/ilir/0198.mp3"
+                                },
+                  "y":  {
+                            "anila":  "audio/anila/0034.mp3",
+                            "ilir":  "audio/ilir/0034.mp3"
+                        },
+                  "rr":  {
+                             "anila":  "audio/anila/0025.mp3",
+                             "ilir":  "audio/ilir/0025.mp3"
+                         },
+                  "Ku është makina?":  {
+                                           "anila":  "audio/anila/0279.mp3",
+                                           "ilir":  "audio/ilir/0279.mp3"
+                                       },
+                  "televizor":  {
+                                    "anila":  "audio/anila/0566.mp3",
+                                    "ilir":  "audio/ilir/0566.mp3"
+                                },
+                  "b":  {
+                            "anila":  "audio/anila/0002.mp3",
+                            "ilir":  "audio/ilir/0002.mp3"
+                        },
+                  "babai":  {
+                                "anila":  "audio/anila/0681.mp3",
+                                "ilir":  "audio/ilir/0681.mp3"
+                            },
+                  "j":  {
+                            "anila":  "audio/anila/0014.mp3",
+                            "ilir":  "audio/ilir/0014.mp3"
+                        },
+                  "mish":  {
+                               "anila":  "audio/anila/0082.mp3",
+                               "ilir":  "audio/ilir/0082.mp3"
+                           },
+                  "quhesh":  {
+                                 "anila":  "audio/anila/0497.mp3",
+                                 "ilir":  "audio/ilir/0497.mp3"
+                             },
+                  "vonë":  {
+                               "anila":  "audio/anila/0575.mp3",
+                               "ilir":  "audio/ilir/0575.mp3"
+                           },
+                  "Numri":  {
+                                "anila":  "audio/anila/0542.mp3",
+                                "ilir":  "audio/ilir/0542.mp3"
+                            },
+                  "Drita":  {
+                                "anila":  "audio/anila/0670.mp3",
+                                "ilir":  "audio/ilir/0670.mp3"
+                            },
+                  "shkollës":  {
+                                   "anila":  "audio/anila/0636.mp3",
+                                   "ilir":  "audio/ilir/0636.mp3"
+                               },
+                  "Ndihem keq.":  {
+                                      "anila":  "audio/anila/0349.mp3",
+                                      "ilir":  "audio/ilir/0349.mp3"
+                                  },
+                  "Sa kushton kjo?":  {
+                                          "anila":  "audio/anila/0200.mp3",
+                                          "ilir":  "audio/ilir/0200.mp3"
+                                      },
+                  "Kjo është dritare.":  {
+                                             "anila":  "audio/anila/0249.mp3",
+                                             "ilir":  "audio/ilir/0249.mp3"
+                                         },
+                  "Më ndihmoni, ju lutem.":  {
+                                                 "anila":  "audio/anila/0311.mp3",
+                                                 "ilir":  "audio/ilir/0311.mp3"
+                                             },
+                  "Kam një vëlla.":  {
+                                         "anila":  "audio/anila/0433.mp3",
+                                         "ilir":  "audio/ilir/0433.mp3"
+                                     },
+                  "Qeni":  {
+                               "anila":  "audio/anila/0687.mp3",
+                               "ilir":  "audio/ilir/0687.mp3"
+                           },
+                  "martë":  {
+                                "anila":  "audio/anila/0580.mp3",
+                                "ilir":  "audio/ilir/0580.mp3"
+                            },
+                  "Flas holandisht.":  {
+                                           "anila":  "audio/anila/0308.mp3",
+                                           "ilir":  "audio/ilir/0308.mp3"
+                                       },
+                  "Më dhemb koka.":  {
+                                         "anila":  "audio/anila/0350.mp3",
+                                         "ilir":  "audio/ilir/0350.mp3"
+                                     },
+                  "shëndet":  {
+                                  "anila":  "audio/anila/0182.mp3",
+                                  "ilir":  "audio/ilir/0182.mp3"
+                              },
+                  "Kjo është vajza ime.":  {
+                                               "anila":  "audio/anila/0431.mp3",
+                                               "ilir":  "audio/ilir/0431.mp3"
+                                           },
+                  "Numri është katër.":  {
+                                             "anila":  "audio/anila/0287.mp3",
+                                             "ilir":  "audio/ilir/0287.mp3"
+                                         },
+                  "problem":  {
+                                  "anila":  "audio/anila/0666.mp3",
+                                  "ilir":  "audio/ilir/0666.mp3"
+                              },
+                  "ka":  {
+                             "anila":  "audio/anila/0658.mp3",
+                             "ilir":  "audio/ilir/0658.mp3"
+                         },
+                  "borë":  {
+                               "anila":  "audio/anila/0106.mp3",
+                               "ilir":  "audio/ilir/0106.mp3"
+                           },
+                  "Kam një libër.":  {
+                                         "anila":  "audio/anila/0211.mp3",
+                                         "ilir":  "audio/ilir/0211.mp3"
+                                     },
+                  "natë":  {
+                               "anila":  "audio/anila/0086.mp3",
+                               "ilir":  "audio/ilir/0086.mp3"
+                           },
+                  "ti":  {
+                             "anila":  "audio/anila/0547.mp3",
+                             "ilir":  "audio/ilir/0547.mp3"
+                         },
+                  "kalë":  {
+                               "anila":  "audio/anila/0078.mp3",
+                               "ilir":  "audio/ilir/0078.mp3"
+                           },
+                  "etje":  {
+                               "anila":  "audio/anila/0587.mp3",
+                               "ilir":  "audio/ilir/0587.mp3"
+                           },
+                  "punon":  {
+                                "anila":  "audio/anila/0669.mp3",
+                                "ilir":  "audio/ilir/0669.mp3"
+                            },
+                  "hënë":  {
+                               "anila":  "audio/anila/0579.mp3",
+                               "ilir":  "audio/ilir/0579.mp3"
+                           },
+                  "Kjo është shkollë.":  {
+                                             "anila":  "audio/anila/0250.mp3",
+                                             "ilir":  "audio/ilir/0250.mp3"
+                                         },
+                  "është":  {
+                                "anila":  "audio/anila/0535.mp3",
+                                "ilir":  "audio/ilir/0535.mp3"
+                            },
+                  "fjalë":  {
+                                "anila":  "audio/anila/0140.mp3",
+                                "ilir":  "audio/ilir/0140.mp3"
+                            },
+                  "Moti":  {
+                               "anila":  "audio/anila/0673.mp3",
+                               "ilir":  "audio/ilir/0673.mp3"
+                           },
+                  "Nuk mundem.":  {
+                                      "anila":  "audio/anila/0459.mp3",
+                                      "ilir":  "audio/ilir/0459.mp3"
+                                  },
+                  "Mirupafshim":  {
+                                      "anila":  "audio/anila/0489.mp3",
+                                      "ilir":  "audio/ilir/0489.mp3"
+                                  },
+                  "a":  {
+                            "anila":  "audio/anila/0001.mp3",
+                            "ilir":  "audio/ilir/0001.mp3"
+                        },
+                  "Wi-Fi":  {
+                                "anila":  "audio/anila/0660.mp3",
+                                "ilir":  "audio/ilir/0660.mp3"
+                            },
+                  "lumtur":  {
+                                 "anila":  "audio/anila/0588.mp3",
+                                 "ilir":  "audio/ilir/0588.mp3"
+                             },
+                  "Ndaloni":  {
+                                  "anila":  "audio/anila/0649.mp3",
+                                  "ilir":  "audio/ilir/0649.mp3"
+                              },
+                  "Sa":  {
+                             "anila":  "audio/anila/0503.mp3",
+                             "ilir":  "audio/ilir/0503.mp3"
+                         },
+                  "Ka shumë erë.":  {
+                                        "anila":  "audio/anila/0422.mp3",
+                                        "ilir":  "audio/ilir/0422.mp3"
+                                    },
+                  "Shikoj televizor.":  {
+                                            "anila":  "audio/anila/0319.mp3",
+                                            "ilir":  "audio/ilir/0319.mp3"
+                                        },
+                  "dëgjoj":  {
+                                 "anila":  "audio/anila/0146.mp3",
+                                 "ilir":  "audio/ilir/0146.mp3"
+                             },
+                  "Shkoj në shtëpi.":  {
+                                           "anila":  "audio/anila/0231.mp3",
+                                           "ilir":  "audio/ilir/0231.mp3"
+                                       },
+                  "g":  {
+                            "anila":  "audio/anila/0010.mp3",
+                            "ilir":  "audio/ilir/0010.mp3"
+                        },
+                  "Gëzuar":  {
+                                 "anila":  "audio/anila/0708.mp3",
+                                 "ilir":  "audio/ilir/0708.mp3"
+                             },
+                  "holandisht":  {
+                                     "anila":  "audio/anila/0555.mp3",
+                                     "ilir":  "audio/ilir/0555.mp3"
+                                 },
+                  "Mbyll dritaren.":  {
+                                          "anila":  "audio/anila/0323.mp3",
+                                          "ilir":  "audio/ilir/0323.mp3"
+                                      },
+                  "Gjithçka është mirë.":  {
+                                               "anila":  "audio/anila/0473.mp3",
+                                               "ilir":  "audio/ilir/0473.mp3"
+                                           },
+                  "familja":  {
+                                  "anila":  "audio/anila/0674.mp3",
+                                  "ilir":  "audio/ilir/0674.mp3"
+                              },
+                  "Dua një birrë.":  {
+                                         "anila":  "audio/anila/0357.mp3",
+                                         "ilir":  "audio/ilir/0357.mp3"
+                                     },
+                  "Nuk ka problem.":  {
+                                          "anila":  "audio/anila/0472.mp3",
+                                          "ilir":  "audio/ilir/0472.mp3"
+                                      },
+                  "Dua drekë.":  {
+                                     "anila":  "audio/anila/0362.mp3",
+                                     "ilir":  "audio/ilir/0362.mp3"
+                                 },
+                  "Ka internet?":  {
+                                       "anila":  "audio/anila/0410.mp3",
+                                       "ilir":  "audio/ilir/0410.mp3"
+                                   },
+                  "lodhur":  {
+                                 "anila":  "audio/anila/0519.mp3",
+                                 "ilir":  "audio/ilir/0519.mp3"
+                             },
+                  "qendër":  {
+                                 "anila":  "audio/anila/0644.mp3",
+                                 "ilir":  "audio/ilir/0644.mp3"
+                             },
+                  "Nuk më pëlqen kjo.":  {
+                                             "anila":  "audio/anila/0365.mp3",
+                                             "ilir":  "audio/ilir/0365.mp3"
+                                         },
+                  "në":  {
+                             "anila":  "audio/anila/0626.mp3",
+                             "ilir":  "audio/ilir/0626.mp3"
+                         },
+                  "Pas":  {
+                              "anila":  "audio/anila/0633.mp3",
+                              "ilir":  "audio/ilir/0633.mp3"
+                          },
+                  "mjek":  {
+                               "anila":  "audio/anila/0107.mp3",
+                               "ilir":  "audio/ilir/0107.mp3"
+                           },
+                  "shqip":  {
+                                "anila":  "audio/anila/0138.mp3",
+                                "ilir":  "audio/ilir/0138.mp3"
+                            },
+                  "Pas bankës.":  {
+                                      "anila":  "audio/anila/0390.mp3",
+                                      "ilir":  "audio/ilir/0390.mp3"
+                                  },
+                  "Jam shumë mirë.":  {
+                                          "anila":  "audio/anila/0300.mp3",
+                                          "ilir":  "audio/ilir/0300.mp3"
+                                      },
+                  "Mund të pres këtu?":  {
+                                             "anila":  "audio/anila/0455.mp3",
+                                             "ilir":  "audio/ilir/0455.mp3"
+                                         },
+                  "Keni kafe?":  {
+                                     "anila":  "audio/anila/0255.mp3",
+                                     "ilir":  "audio/ilir/0255.mp3"
+                                 },
+                  "diell":  {
+                                "anila":  "audio/anila/0136.mp3",
+                                "ilir":  "audio/ilir/0136.mp3"
+                            },
+                  "gj":  {
+                             "anila":  "audio/anila/0011.mp3",
+                             "ilir":  "audio/ilir/0011.mp3"
+                         },
+                  "Kam dy fëmijë.":  {
+                                         "anila":  "audio/anila/0432.mp3",
+                                         "ilir":  "audio/ilir/0432.mp3"
+                                     },
+                  "qiell":  {
+                                "anila":  "audio/anila/0137.mp3",
+                                "ilir":  "audio/ilir/0137.mp3"
+                            },
+                  "ndihmoj":  {
+                                  "anila":  "audio/anila/0695.mp3",
+                                  "ilir":  "audio/ilir/0695.mp3"
+                              },
+                  "Ulu këtu.":  {
+                                    "anila":  "audio/anila/0324.mp3",
+                                    "ilir":  "audio/ilir/0324.mp3"
+                                },
+                  "marr":  {
+                               "anila":  "audio/anila/0101.mp3",
+                               "ilir":  "audio/ilir/0101.mp3"
+                           },
+                  "Në rregull.":  {
+                                      "anila":  "audio/anila/0475.mp3",
+                                      "ilir":  "audio/ilir/0475.mp3"
+                                  },
+                  "Dua peshk.":  {
+                                     "anila":  "audio/anila/0269.mp3",
+                                     "ilir":  "audio/ilir/0269.mp3"
+                                 },
+                  "do":  {
+                             "anila":  "audio/anila/0560.mp3",
+                             "ilir":  "audio/ilir/0560.mp3"
+                         },
+                  "Unë ha banane.":  {
+                                         "anila":  "audio/anila/0274.mp3",
+                                         "ilir":  "audio/ilir/0274.mp3"
+                                     },
+                  "se":  {
+                             "anila":  "audio/anila/0709.mp3",
+                             "ilir":  "audio/ilir/0709.mp3"
+                         },
+                  "shtëpi":  {
+                                 "anila":  "audio/anila/0147.mp3",
+                                 "ilir":  "audio/ilir/0147.mp3"
+                             },
+                  "flisni":  {
+                                 "anila":  "audio/anila/0556.mp3",
+                                 "ilir":  "audio/ilir/0556.mp3"
+                             },
+                  "dyqan":  {
+                                "anila":  "audio/anila/0116.mp3",
+                                "ilir":  "audio/ilir/0116.mp3"
+                            },
+                  "Macja":  {
+                                "anila":  "audio/anila/0688.mp3",
+                                "ilir":  "audio/ilir/0688.mp3"
+                            },
+                  "Ky është libër.":  {
+                                          "anila":  "audio/anila/0247.mp3",
+                                          "ilir":  "audio/ilir/0247.mp3"
+                                      },
+                  "A është gati?":  {
+                                        "anila":  "audio/anila/0469.mp3",
+                                        "ilir":  "audio/ilir/0469.mp3"
+                                    },
+                  "motra":  {
+                                "anila":  "audio/anila/0513.mp3",
+                                "ilir":  "audio/ilir/0513.mp3"
+                            },
+                  "Shikoj":  {
+                                 "anila":  "audio/anila/0617.mp3",
+                                 "ilir":  "audio/ilir/0617.mp3"
+                             },
+                  "Po":  {
+                             "anila":  "audio/anila/0616.mp3",
+                             "ilir":  "audio/ilir/0616.mp3"
+                         },
+                  "Mbyll derën.":  {
+                                       "anila":  "audio/anila/0321.mp3",
+                                       "ilir":  "audio/ilir/0321.mp3"
+                                   },
+                  "Kam etje.":  {
+                                    "anila":  "audio/anila/0344.mp3",
+                                    "ilir":  "audio/ilir/0344.mp3"
+                                },
+                  "Menunë, ju lutem.":  {
+                                            "anila":  "audio/anila/0368.mp3",
+                                            "ilir":  "audio/ilir/0368.mp3"
+                                        },
+                  "bankës":  {
+                                 "anila":  "audio/anila/0634.mp3",
+                                 "ilir":  "audio/ilir/0634.mp3"
+                             },
+                  "fle":  {
+                              "anila":  "audio/anila/0057.mp3",
+                              "ilir":  "audio/ilir/0057.mp3"
+                          },
+                  "ngrohtë":  {
+                                  "anila":  "audio/anila/0170.mp3",
+                                  "ilir":  "audio/ilir/0170.mp3"
+                              },
+                  "mësoj":  {
+                                "anila":  "audio/anila/0130.mp3",
+                                "ilir":  "audio/ilir/0130.mp3"
+                            },
+                  "Mund të ndihmoj?":  {
+                                           "anila":  "audio/anila/0454.mp3",
+                                           "ilir":  "audio/ilir/0454.mp3"
+                                       },
+                  "jashtë":  {
+                                 "anila":  "audio/anila/0684.mp3",
+                                 "ilir":  "audio/ilir/0684.mp3"
+                             },
+                  "shoh":  {
+                               "anila":  "audio/anila/0100.mp3",
+                               "ilir":  "audio/ilir/0100.mp3"
+                           },
+                  "pres":  {
+                               "anila":  "audio/anila/0073.mp3",
+                               "ilir":  "audio/ilir/0073.mp3"
+                           },
+                  "Jam e lodhur.":  {
+                                        "anila":  "audio/anila/0345.mp3",
+                                        "ilir":  "audio/ilir/0345.mp3"
+                                    },
+                  "Ky":  {
+                             "anila":  "audio/anila/0645.mp3",
+                             "ilir":  "audio/ilir/0645.mp3"
+                         },
+                  "dhemb":  {
+                                "anila":  "audio/anila/0590.mp3",
+                                "ilir":  "audio/ilir/0590.mp3"
+                            },
+                  "kuzhinë":  {
+                                  "anila":  "audio/anila/0176.mp3",
+                                  "ilir":  "audio/ilir/0176.mp3"
+                              },
+                  "Dua kafe.":  {
+                                    "anila":  "audio/anila/0216.mp3",
+                                    "ilir":  "audio/ilir/0216.mp3"
+                                },
+                  "jam":  {
+                              "anila":  "audio/anila/0056.mp3",
+                              "ilir":  "audio/ilir/0056.mp3"
+                          },
+                  "farmaci":  {
+                                  "anila":  "audio/anila/0172.mp3",
+                                  "ilir":  "audio/ilir/0172.mp3"
+                              },
+                  "Është afër?":  {
+                                      "anila":  "audio/anila/0265.mp3",
+                                      "ilir":  "audio/ilir/0265.mp3"
+                                  },
+                  "Tani është mëngjes.":  {
+                                              "anila":  "audio/anila/0242.mp3",
+                                              "ilir":  "audio/ilir/0242.mp3"
+                                          },
+                  "Dushi":  {
+                                "anila":  "audio/anila/0667.mp3",
+                                "ilir":  "audio/ilir/0667.mp3"
+                            },
+                  "Quhem":  {
+                                "anila":  "audio/anila/0548.mp3",
+                                "ilir":  "audio/ilir/0548.mp3"
+                            },
+                  "dhomë":  {
+                                "anila":  "audio/anila/0134.mp3",
+                                "ilir":  "audio/ilir/0134.mp3"
+                            },
+                  "Sigurisht.":  {
+                                     "anila":  "audio/anila/0476.mp3",
+                                     "ilir":  "audio/ilir/0476.mp3"
+                                 },
+                  "d":  {
+                            "anila":  "audio/anila/0005.mp3",
+                            "ilir":  "audio/ilir/0005.mp3"
+                        },
+                  "Çelësi, ju lutem.":  {
+                                            "anila":  "audio/anila/0409.mp3",
+                                            "ilir":  "audio/ilir/0409.mp3"
+                                        },
+                  "Ju lutem.":  {
+                                    "anila":  "audio/anila/0191.mp3",
+                                    "ilir":  "audio/ilir/0191.mp3"
+                                },
+                  "atje":  {
+                               "anila":  "audio/anila/0092.mp3",
+                               "ilir":  "audio/ilir/0092.mp3"
+                           },
+                  "Gëzuar!":  {
+                                  "anila":  "audio/anila/0480.mp3",
+                                  "ilir":  "audio/ilir/0480.mp3"
+                              },
+                  "Mirëdita!":  {
+                                    "anila":  "audio/anila/0187.mp3",
+                                    "ilir":  "audio/ilir/0187.mp3"
+                                },
+                  "derë":  {
+                               "anila":  "audio/anila/0105.mp3",
+                               "ilir":  "audio/ilir/0105.mp3"
+                           },
+                  "Libri është në dhomë.":  {
+                                                "anila":  "audio/anila/0441.mp3",
+                                                "ilir":  "audio/ilir/0441.mp3"
+                                            },
+                  "farmacia":  {
+                                   "anila":  "audio/anila/0529.mp3",
+                                   "ilir":  "audio/ilir/0529.mp3"
+                               },
+                  "nëna":  {
+                               "anila":  "audio/anila/0680.mp3",
+                               "ilir":  "audio/ilir/0680.mp3"
+                           },
+                  "hap":  {
+                              "anila":  "audio/anila/0061.mp3",
+                              "ilir":  "audio/ilir/0061.mp3"
+                          },
+                  "hotelit":  {
+                                  "anila":  "audio/anila/0630.mp3",
+                                  "ilir":  "audio/ilir/0630.mp3"
+                              },
+                  "mbrëmje":  {
+                                  "anila":  "audio/anila/0181.mp3",
+                                  "ilir":  "audio/ilir/0181.mp3"
+                              },
+                  "x":  {
+                            "anila":  "audio/anila/0032.mp3",
+                            "ilir":  "audio/ilir/0032.mp3"
+                        },
+                  "Kam një mace.":  {
+                                        "anila":  "audio/anila/0212.mp3",
+                                        "ilir":  "audio/ilir/0212.mp3"
+                                    },
+                  "Ku është qendra?":  {
+                                           "anila":  "audio/anila/0379.mp3",
+                                           "ilir":  "audio/ilir/0379.mp3"
+                                       },
+                  "A është e hapur?":  {
+                                           "anila":  "audio/anila/0466.mp3",
+                                           "ilir":  "audio/ilir/0466.mp3"
+                                       },
+                  "Makina ime është jashtë.":  {
+                                                   "anila":  "audio/anila/0438.mp3",
+                                                   "ilir":  "audio/ilir/0438.mp3"
+                                               },
+                  "Dua një kafe.":  {
+                                        "anila":  "audio/anila/0356.mp3",
+                                        "ilir":  "audio/ilir/0356.mp3"
+                                    },
+                  "hyj":  {
+                              "anila":  "audio/anila/0693.mp3",
+                              "ilir":  "audio/ilir/0693.mp3"
+                          },
+                  "qen":  {
+                              "anila":  "audio/anila/0062.mp3",
+                              "ilir":  "audio/ilir/0062.mp3"
+                          },
+                  "oriz":  {
+                               "anila":  "audio/anila/0083.mp3",
+                               "ilir":  "audio/ilir/0083.mp3"
+                           },
+                  "Ku është farmacia?":  {
+                                             "anila":  "audio/anila/0260.mp3",
+                                             "ilir":  "audio/ilir/0260.mp3"
+                                         },
+                  "z":  {
+                            "anila":  "audio/anila/0035.mp3",
+                            "ilir":  "audio/ilir/0035.mp3"
+                        },
+                  "internet":  {
+                                   "anila":  "audio/anila/0659.mp3",
+                                   "ilir":  "audio/ilir/0659.mp3"
+                               },
+                  "plazhi":  {
+                                 "anila":  "audio/anila/0625.mp3",
+                                 "ilir":  "audio/ilir/0625.mp3"
+                             },
+                  "rregull":  {
+                                  "anila":  "audio/anila/0703.mp3",
+                                  "ilir":  "audio/ilir/0703.mp3"
+                              },
+                  "ore":  {
+                              "anila":  "audio/anila/0576.mp3",
+                              "ilir":  "audio/ilir/0576.mp3"
+                          },
+                  "Përshëndetje":  {
+                                       "anila":  "audio/anila/0485.mp3",
+                                       "ilir":  "audio/ilir/0485.mp3"
+                                   },
+                  "Vij nesër.":  {
+                                     "anila":  "audio/anila/0328.mp3",
+                                     "ilir":  "audio/ilir/0328.mp3"
+                                 },
+                  "taksi":  {
+                                "anila":  "audio/anila/0647.mp3",
+                                "ilir":  "audio/ilir/0647.mp3"
+                            },
+                  "Sot është ngrohtë.":  {
+                                             "anila":  "audio/anila/0239.mp3",
+                                             "ilir":  "audio/ilir/0239.mp3"
+                                         },
+                  "Kam rezervuar një dhomë.":  {
+                                                   "anila":  "audio/anila/0403.mp3",
+                                                   "ilir":  "audio/ilir/0403.mp3"
+                                               },
+                  "Si jeni?":  {
+                                   "anila":  "audio/anila/0299.mp3",
+                                   "ilir":  "audio/ilir/0299.mp3"
+                               },
+                  "shtëpia":  {
+                                  "anila":  "audio/anila/0682.mp3",
+                                  "ilir":  "audio/ilir/0682.mp3"
+                              },
+                  "ata":  {
+                              "anila":  "audio/anila/0038.mp3",
+                              "ilir":  "audio/ilir/0038.mp3"
+                          },
+                  "pi":  {
+                             "anila":  "audio/anila/0516.mp3",
+                             "ilir":  "audio/ilir/0516.mp3"
+                         },
+                  "Nuk ka rëndësi.":  {
+                                          "anila":  "audio/anila/0478.mp3",
+                                          "ilir":  "audio/ilir/0478.mp3"
+                                      },
+                  "kuptoj":  {
+                                 "anila":  "audio/anila/0163.mp3",
+                                 "ilir":  "audio/ilir/0163.mp3"
+                             },
+                  "për":  {
+                              "anila":  "audio/anila/0652.mp3",
+                              "ilir":  "audio/ilir/0652.mp3"
+                          },
+                  "Dua të lexoj.":  {
+                                        "anila":  "audio/anila/0450.mp3",
+                                        "ilir":  "audio/ilir/0450.mp3"
+                                    },
+                  "dhoma":  {
+                                "anila":  "audio/anila/0662.mp3",
+                                "ilir":  "audio/ilir/0662.mp3"
+                            },
+                  "shkollë":  {
+                                  "anila":  "audio/anila/0174.mp3",
+                                  "ilir":  "audio/ilir/0174.mp3"
+                              },
+                  "Faturën":  {
+                                  "anila":  "audio/anila/0526.mp3",
+                                  "ilir":  "audio/ilir/0526.mp3"
+                              },
+                  "kripë":  {
+                                "anila":  "audio/anila/0121.mp3",
+                                "ilir":  "audio/ilir/0121.mp3"
+                            },
+                  "Ky është babai.":  {
+                                          "anila":  "audio/anila/0205.mp3",
+                                          "ilir":  "audio/ilir/0205.mp3"
+                                      },
+                  "det":  {
+                              "anila":  "audio/anila/0047.mp3",
+                              "ilir":  "audio/ilir/0047.mp3"
+                          },
+                  "Jam në dyqan.":  {
+                                        "anila":  "audio/anila/0229.mp3",
+                                        "ilir":  "audio/ilir/0229.mp3"
+                                    },
+                  "Si":  {
+                             "anila":  "audio/anila/0495.mp3",
+                             "ilir":  "audio/ilir/0495.mp3"
+                         },
+                  "vezë":  {
+                               "anila":  "audio/anila/0081.mp3",
+                               "ilir":  "audio/ilir/0081.mp3"
+                           },
+                  "zh":  {
+                             "anila":  "audio/anila/0036.mp3",
+                             "ilir":  "audio/ilir/0036.mp3"
+                         },
+                  "Përsëriteni, ju lutem.":  {
+                                                 "anila":  "audio/anila/0310.mp3",
+                                                 "ilir":  "audio/ilir/0310.mp3"
+                                             },
+                  "Mirëmëngjes!":  {
+                                       "anila":  "audio/anila/0186.mp3",
+                                       "ilir":  "audio/ilir/0186.mp3"
+                                   },
+                  "mundem":  {
+                                 "anila":  "audio/anila/0697.mp3",
+                                 "ilir":  "audio/ilir/0697.mp3"
+                             },
+                  "grua":  {
+                               "anila":  "audio/anila/0099.mp3",
+                               "ilir":  "audio/ilir/0099.mp3"
+                           },
+                  "një":  {
+                              "anila":  "audio/anila/0067.mp3",
+                              "ilir":  "audio/ilir/0067.mp3"
+                          },
+                  "Telefononi":  {
+                                     "anila":  "audio/anila/0595.mp3",
+                                     "ilir":  "audio/ilir/0595.mp3"
+                                 },
+                  "Sot është ftohtë.":  {
+                                            "anila":  "audio/anila/0240.mp3",
+                                            "ilir":  "audio/ilir/0240.mp3"
+                                        },
+                  "Nuk e dua këtë.":  {
+                                          "anila":  "audio/anila/0462.mp3",
+                                          "ilir":  "audio/ilir/0462.mp3"
+                                      },
+                  "eci":  {
+                              "anila":  "audio/anila/0058.mp3",
+                              "ilir":  "audio/ilir/0058.mp3"
+                          },
+                  "mjaltë":  {
+                                 "anila":  "audio/anila/0153.mp3",
+                                 "ilir":  "audio/ilir/0153.mp3"
+                             },
+                  "A është e lirë?":  {
+                                          "anila":  "audio/anila/0465.mp3",
+                                          "ilir":  "audio/ilir/0465.mp3"
+                                      },
+                  "Ku":  {
+                             "anila":  "audio/anila/0500.mp3",
+                             "ilir":  "audio/ilir/0500.mp3"
+                         },
+                  "ora":  {
+                              "anila":  "audio/anila/0577.mp3",
+                              "ilir":  "audio/ilir/0577.mp3"
+                          },
+                  "Numri është gjashtë.":  {
+                                               "anila":  "audio/anila/0289.mp3",
+                                               "ilir":  "audio/ilir/0289.mp3"
+                                           },
+                  "shkoj":  {
+                                "anila":  "audio/anila/0128.mp3",
+                                "ilir":  "audio/ilir/0128.mp3"
+                            },
+                  "ta":  {
+                             "anila":  "audio/anila/0614.mp3",
+                             "ilir":  "audio/ilir/0614.mp3"
+                         },
+                  "darkë":  {
+                                "anila":  "audio/anila/0603.mp3",
+                                "ilir":  "audio/ilir/0603.mp3"
+                            },
+                  "Faleminderit!":  {
+                                        "anila":  "audio/anila/0190.mp3",
+                                        "ilir":  "audio/ilir/0190.mp3"
+                                    },
+                  "pesë":  {
+                               "anila":  "audio/anila/0109.mp3",
+                               "ilir":  "audio/ilir/0109.mp3"
+                           },
+                  "Urime!":  {
+                                 "anila":  "audio/anila/0479.mp3",
+                                 "ilir":  "audio/ilir/0479.mp3"
+                             },
+                  "derën":  {
+                                "anila":  "audio/anila/0567.mp3",
+                                "ilir":  "audio/ilir/0567.mp3"
+                            },
+                  "park":  {
+                               "anila":  "audio/anila/0098.mp3",
+                               "ilir":  "audio/ilir/0098.mp3"
+                           },
+                  "tavolinë":  {
+                                   "anila":  "audio/anila/0605.mp3",
+                                   "ilir":  "audio/ilir/0605.mp3"
+                               },
+                  "nevojë":  {
+                                 "anila":  "audio/anila/0592.mp3",
+                                 "ilir":  "audio/ilir/0592.mp3"
+                             },
+                  "ç":  {
+                            "anila":  "audio/anila/0004.mp3",
+                            "ilir":  "audio/ilir/0004.mp3"
+                        },
+                  "Jam gati.":  {
+                                    "anila":  "audio/anila/0470.mp3",
+                                    "ilir":  "audio/ilir/0470.mp3"
+                                },
+                  "Telefononi mjekun.":  {
+                                             "anila":  "audio/anila/0353.mp3",
+                                             "ilir":  "audio/ilir/0353.mp3"
+                                         },
+                  "duhet":  {
+                                "anila":  "audio/anila/0133.mp3",
+                                "ilir":  "audio/ilir/0133.mp3"
+                            },
+                  "A keni më lirë?":  {
+                                          "anila":  "audio/anila/0374.mp3",
+                                          "ilir":  "audio/ilir/0374.mp3"
+                                      },
+                  "nënë":  {
+                               "anila":  "audio/anila/0075.mp3",
+                               "ilir":  "audio/ilir/0075.mp3"
+                           },
+                  "familje":  {
+                                  "anila":  "audio/anila/0175.mp3",
+                                  "ilir":  "audio/ilir/0175.mp3"
+                              },
+                  "Natën":  {
+                                "anila":  "audio/anila/0713.mp3",
+                                "ilir":  "audio/ilir/0713.mp3"
+                            },
+                  "nga":  {
+                              "anila":  "audio/anila/0550.mp3",
+                              "ilir":  "audio/ilir/0550.mp3"
+                          },
+                  "zemër":  {
+                                "anila":  "audio/anila/0122.mp3",
+                                "ilir":  "audio/ilir/0122.mp3"
+                            },
+                  "fal":  {
+                              "anila":  "audio/anila/0494.mp3",
+                              "ilir":  "audio/ilir/0494.mp3"
+                          },
+                  "E dua këtë.":  {
+                                      "anila":  "audio/anila/0461.mp3",
+                                      "ilir":  "audio/ilir/0461.mp3"
+                                  },
+                  "th":  {
+                             "anila":  "audio/anila/0029.mp3",
+                             "ilir":  "audio/ilir/0029.mp3"
+                         },
+                  "Unë jam nga Holanda.":  {
+                                               "anila":  "audio/anila/0203.mp3",
+                                               "ilir":  "audio/ilir/0203.mp3"
+                                           },
+                  "gatuaj":  {
+                                 "anila":  "audio/anila/0164.mp3",
+                                 "ilir":  "audio/ilir/0164.mp3"
+                             },
+                  "Përsëriteni":  {
+                                      "anila":  "audio/anila/0558.mp3",
+                                      "ilir":  "audio/ilir/0558.mp3"
+                                  },
+                  "Një moment, ju lutem.":  {
+                                                "anila":  "audio/anila/0471.mp3",
+                                                "ilir":  "audio/ilir/0471.mp3"
+                                            },
+                  "A mund të paguaj?":  {
+                                            "anila":  "audio/anila/0369.mp3",
+                                            "ilir":  "audio/ilir/0369.mp3"
+                                        },
+                  "Kjo është motra.":  {
+                                           "anila":  "audio/anila/0207.mp3",
+                                           "ilir":  "audio/ilir/0207.mp3"
+                                       },
+                  "vëlla":  {
+                                "anila":  "audio/anila/0123.mp3",
+                                "ilir":  "audio/ilir/0123.mp3"
+                            },
+                  "Unë shkruaj.":  {
+                                       "anila":  "audio/anila/0237.mp3",
+                                       "ilir":  "audio/ilir/0237.mp3"
+                                   },
+                  "vij":  {
+                              "anila":  "audio/anila/0059.mp3",
+                              "ilir":  "audio/ilir/0059.mp3"
+                          },
+                  "Çfarë do të thotë?":  {
+                                             "anila":  "audio/anila/0312.mp3",
+                                             "ilir":  "audio/ilir/0312.mp3"
+                                         },
+                  "Shihemi nesër.":  {
+                                         "anila":  "audio/anila/0329.mp3",
+                                         "ilir":  "audio/ilir/0329.mp3"
+                                     },
+                  "vjen":  {
+                               "anila":  "audio/anila/0640.mp3",
+                               "ilir":  "audio/ilir/0640.mp3"
+                           },
+                  "Qeni është në kopsht.":  {
+                                                "anila":  "audio/anila/0442.mp3",
+                                                "ilir":  "audio/ilir/0442.mp3"
+                                            },
+                  "këtë":  {
+                               "anila":  "audio/anila/0618.mp3",
+                               "ilir":  "audio/ilir/0618.mp3"
+                           },
+                  "Kam një motër.":  {
+                                         "anila":  "audio/anila/0434.mp3",
+                                         "ilir":  "audio/ilir/0434.mp3"
+                                     },
+                  "hapur":  {
+                                "anila":  "audio/anila/0690.mp3",
+                                "ilir":  "audio/ilir/0690.mp3"
+                            },
+                  "Jam i lumtur.":  {
+                                        "anila":  "audio/anila/0346.mp3",
+                                        "ilir":  "audio/ilir/0346.mp3"
+                                    },
+                  "zog":  {
+                              "anila":  "audio/anila/0063.mp3",
+                              "ilir":  "audio/ilir/0063.mp3"
+                          },
+                  "vini":  {
+                               "anila":  "audio/anila/0710.mp3",
+                               "ilir":  "audio/ilir/0710.mp3"
+                           },
+                  "Qielli është blu.":  {
+                                            "anila":  "audio/anila/0253.mp3",
+                                            "ilir":  "audio/ilir/0253.mp3"
+                                        },
+                  "rëndësi":  {
+                                  "anila":  "audio/anila/0706.mp3",
+                                  "ilir":  "audio/ilir/0706.mp3"
+                              },
+                  "Sot është e hënë.":  {
+                                            "anila":  "audio/anila/0336.mp3",
+                                            "ilir":  "audio/ilir/0336.mp3"
+                                        },
+                  "Faleminderit":  {
+                                       "anila":  "audio/anila/0490.mp3",
+                                       "ilir":  "audio/ilir/0490.mp3"
+                                   },
+                  "Mirë se vini!":  {
+                                        "anila":  "audio/anila/0481.mp3",
+                                        "ilir":  "audio/ilir/0481.mp3"
+                                    },
+                  "anglisht":  {
+                                   "anila":  "audio/anila/0557.mp3",
+                                   "ilir":  "audio/ilir/0557.mp3"
+                               },
+                  "Dhoma është e vogël.":  {
+                                               "anila":  "audio/anila/0414.mp3",
+                                               "ilir":  "audio/ilir/0414.mp3"
+                                           },
+                  "Dera është e hapur.":  {
+                                              "anila":  "audio/anila/0444.mp3",
+                                              "ilir":  "audio/ilir/0444.mp3"
+                                          },
+                  "Kthehuni majtas.":  {
+                                           "anila":  "audio/anila/0262.mp3",
+                                           "ilir":  "audio/ilir/0262.mp3"
+                                       },
+                  "Ku është tualeti?":  {
+                                            "anila":  "audio/anila/0199.mp3",
+                                            "ilir":  "audio/ilir/0199.mp3"
+                                        },
+                  "ha":  {
+                             "anila":  "audio/anila/0515.mp3",
+                             "ilir":  "audio/ilir/0515.mp3"
+                         },
+                  "Ky është burri im.":  {
+                                             "anila":  "audio/anila/0428.mp3",
+                                             "ilir":  "audio/ilir/0428.mp3"
+                                         },
+                  "rrugë":  {
+                                "anila":  "audio/anila/0112.mp3",
+                                "ilir":  "audio/ilir/0112.mp3"
+                            },
+                  "ftohtë":  {
+                                 "anila":  "audio/anila/0154.mp3",
+                                 "ilir":  "audio/ilir/0154.mp3"
+                             },
+                  "Dushi nuk punon.":  {
+                                           "anila":  "audio/anila/0417.mp3",
+                                           "ilir":  "audio/ilir/0417.mp3"
+                                       },
+                  "Kam një problem.":  {
+                                           "anila":  "audio/anila/0416.mp3",
+                                           "ilir":  "audio/ilir/0416.mp3"
+                                       },
+                  "bar":  {
+                              "anila":  "audio/anila/0051.mp3",
+                              "ilir":  "audio/ilir/0051.mp3"
+                          },
+                  "stacioni":  {
+                                   "anila":  "audio/anila/0527.mp3",
+                                   "ilir":  "audio/ilir/0527.mp3"
+                               },
+                  "m":  {
+                            "anila":  "audio/anila/0018.mp3",
+                            "ilir":  "audio/ilir/0018.mp3"
+                        },
+                  "keq":  {
+                              "anila":  "audio/anila/0066.mp3",
+                              "ilir":  "audio/ilir/0066.mp3"
+                          },
+                  "Është larg?":  {
+                                      "anila":  "audio/anila/0264.mp3",
+                                      "ilir":  "audio/ilir/0264.mp3"
+                                  },
+                  "Unë pi ujë.":  {
+                                      "anila":  "audio/anila/0223.mp3",
+                                      "ilir":  "audio/ilir/0223.mp3"
+                                  },
+                  "Vetëm po shikoj.":  {
+                                           "anila":  "audio/anila/0376.mp3",
+                                           "ilir":  "audio/ilir/0376.mp3"
+                                       },
+                  "Unë ha mollë.":  {
+                                        "anila":  "audio/anila/0272.mp3",
+                                        "ilir":  "audio/ilir/0272.mp3"
+                                    },
+                  "Është shumë e mirë.":  {
+                                              "anila":  "audio/anila/0366.mp3",
+                                              "ilir":  "audio/ilir/0366.mp3"
+                                          },
+                  "çoni":  {
+                               "anila":  "audio/anila/0648.mp3",
+                               "ilir":  "audio/ilir/0648.mp3"
+                           },
+                  "Tani është mbrëmje.":  {
+                                              "anila":  "audio/anila/0243.mp3",
+                                              "ilir":  "audio/ilir/0243.mp3"
+                                          },
+                  "por":  {
+                              "anila":  "audio/anila/0042.mp3",
+                              "ilir":  "audio/ilir/0042.mp3"
+                          },
+                  "dhjetë":  {
+                                 "anila":  "audio/anila/0167.mp3",
+                                 "ilir":  "audio/ilir/0167.mp3"
+                             },
+                  "Flas pak shqip.":  {
+                                          "anila":  "audio/anila/0307.mp3",
+                                          "ilir":  "audio/ilir/0307.mp3"
+                                      },
+                  "Nuk":  {
+                              "anila":  "audio/anila/0668.mp3",
+                              "ilir":  "audio/ilir/0668.mp3"
+                          },
+                  "burri":  {
+                                "anila":  "audio/anila/0675.mp3",
+                                "ilir":  "audio/ilir/0675.mp3"
+                            },
+                  "moment":  {
+                                 "anila":  "audio/anila/0700.mp3",
+                                 "ilir":  "audio/ilir/0700.mp3"
+                             },
+                  "mërkurë":  {
+                                  "anila":  "audio/anila/0581.mp3",
+                                  "ilir":  "audio/ilir/0581.mp3"
+                              },
+                  "enjte":  {
+                                "anila":  "audio/anila/0582.mp3",
+                                "ilir":  "audio/ilir/0582.mp3"
+                            },
+                  "Ku ndalon autobusi?":  {
+                                              "anila":  "audio/anila/0396.mp3",
+                                              "ilir":  "audio/ilir/0396.mp3"
+                                          },
+                  "Keni këtë madhësi?":  {
+                                             "anila":  "audio/anila/0377.mp3",
+                                             "ilir":  "audio/ilir/0377.mp3"
+                                         },
+                  "tetë":  {
+                               "anila":  "audio/anila/0110.mp3",
+                               "ilir":  "audio/ilir/0110.mp3"
+                           },
+                  "Holandë":  {
+                                  "anila":  "audio/anila/0553.mp3",
+                                  "ilir":  "audio/ilir/0553.mp3"
+                              },
+                  "Është shumë larg.":  {
+                                            "anila":  "audio/anila/0385.mp3",
+                                            "ilir":  "audio/ilir/0385.mp3"
+                                        },
+                  "kushton":  {
+                                  "anila":  "audio/anila/0504.mp3",
+                                  "ilir":  "audio/ilir/0504.mp3"
+                              },
+                  "A është mirë?":  {
+                                        "anila":  "audio/anila/0468.mp3",
+                                        "ilir":  "audio/ilir/0468.mp3"
+                                    },
+                  "Dua ta blej.":  {
+                                       "anila":  "audio/anila/0375.mp3",
+                                       "ilir":  "audio/ilir/0375.mp3"
+                                   },
+                  "Vetëm":  {
+                                "anila":  "audio/anila/0615.mp3",
+                                "ilir":  "audio/ilir/0615.mp3"
+                            },
+                  "erë":  {
+                              "anila":  "audio/anila/0672.mp3",
+                              "ilir":  "audio/ilir/0672.mp3"
+                          },
+                  "Jam në hotel.":  {
+                                        "anila":  "audio/anila/0230.mp3",
+                                        "ilir":  "audio/ilir/0230.mp3"
+                                    },
+                  "Më çoni në hotel.":  {
+                                            "anila":  "audio/anila/0400.mp3",
+                                            "ilir":  "audio/ilir/0400.mp3"
+                                        },
+                  "Prit pak.":  {
+                                    "anila":  "audio/anila/0326.mp3",
+                                    "ilir":  "audio/ilir/0326.mp3"
+                                },
+                  "Ndaloni këtu, ju lutem.":  {
+                                                  "anila":  "audio/anila/0401.mp3",
+                                                  "ilir":  "audio/ilir/0401.mp3"
+                                              },
+                  "ime":  {
+                              "anila":  "audio/anila/0656.mp3",
+                              "ilir":  "audio/ilir/0656.mp3"
+                          },
+                  "Shtëpia ime është këtu.":  {
+                                                  "anila":  "audio/anila/0437.mp3",
+                                                  "ilir":  "audio/ilir/0437.mp3"
+                                              },
+                  "di":  {
+                             "anila":  "audio/anila/0499.mp3",
+                             "ilir":  "audio/ilir/0499.mp3"
+                         },
+                  "A ka mëngjes?":  {
+                                        "anila":  "audio/anila/0407.mp3",
+                                        "ilir":  "audio/ilir/0407.mp3"
+                                    },
+                  "vrapoj":  {
+                                 "anila":  "audio/anila/0165.mp3",
+                                 "ilir":  "audio/ilir/0165.mp3"
+                             },
+                  "Fjalëkalimi":  {
+                                      "anila":  "audio/anila/0661.mp3",
+                                      "ilir":  "audio/ilir/0661.mp3"
+                                  },
+                  "Mirëmëngjes":  {
+                                      "anila":  "audio/anila/0486.mp3",
+                                      "ilir":  "audio/ilir/0486.mp3"
+                                  },
+                  "Duhet të shkoj.":  {
+                                          "anila":  "audio/anila/0456.mp3",
+                                          "ilir":  "audio/ilir/0456.mp3"
+                                      },
+                  "Shkoni drejt.":  {
+                                        "anila":  "audio/anila/0261.mp3",
+                                        "ilir":  "audio/ilir/0261.mp3"
+                                    },
+                  "gur":  {
+                              "anila":  "audio/anila/0050.mp3",
+                              "ilir":  "audio/ilir/0050.mp3"
+                          },
+                  "çelësi":  {
+                                 "anila":  "audio/anila/0657.mp3",
+                                 "ilir":  "audio/ilir/0657.mp3"
+                             },
+                  "Numri është një.":  {
+                                           "anila":  "audio/anila/0284.mp3",
+                                           "ilir":  "audio/ilir/0284.mp3"
+                                       },
+                  "Moti është i mirë.":  {
+                                             "anila":  "audio/anila/0425.mp3",
+                                             "ilir":  "audio/ilir/0425.mp3"
+                                         },
+                  "nj":  {
+                             "anila":  "audio/anila/0020.mp3",
+                             "ilir":  "audio/ilir/0020.mp3"
+                         },
+                  "nesër":  {
+                                "anila":  "audio/anila/0572.mp3",
+                                "ilir":  "audio/ilir/0572.mp3"
+                            },
+                  "Kam një telefon.":  {
+                                           "anila":  "audio/anila/0210.mp3",
+                                           "ilir":  "audio/ilir/0210.mp3"
+                                       },
+                  "mesazh":  {
+                                 "anila":  "audio/anila/0563.mp3",
+                                 "ilir":  "audio/ilir/0563.mp3"
+                             },
+                  "stacion":  {
+                                  "anila":  "audio/anila/0173.mp3",
+                                  "ilir":  "audio/ilir/0173.mp3"
+                              },
+                  "Ku është libri?":  {
+                                          "anila":  "audio/anila/0281.mp3",
+                                          "ilir":  "audio/ilir/0281.mp3"
+                                      },
+                  "Jetoj në Holandë.":  {
+                                            "anila":  "audio/anila/0306.mp3",
+                                            "ilir":  "audio/ilir/0306.mp3"
+                                        },
+                  "krevat":  {
+                                 "anila":  "audio/anila/0162.mp3",
+                                 "ilir":  "audio/ilir/0162.mp3"
+                             },
+                  "Ku është stacioni?":  {
+                                             "anila":  "audio/anila/0258.mp3",
+                                             "ilir":  "audio/ilir/0258.mp3"
+                                         },
+                  "shkruaj":  {
+                                  "anila":  "audio/anila/0183.mp3",
+                                  "ilir":  "audio/ilir/0183.mp3"
+                              },
+                  "lutem":  {
+                                "anila":  "audio/anila/0492.mp3",
+                                "ilir":  "audio/ilir/0492.mp3"
+                            },
+                  "Pranë stacionit.":  {
+                                           "anila":  "audio/anila/0389.mp3",
+                                           "ilir":  "audio/ilir/0389.mp3"
+                                       },
+                  "qytet":  {
+                                "anila":  "audio/anila/0114.mp3",
+                                "ilir":  "audio/ilir/0114.mp3"
+                            },
+                  "Eja":  {
+                              "anila":  "audio/anila/0570.mp3",
+                              "ilir":  "audio/ilir/0570.mp3"
+                          },
+                  "uri":  {
+                              "anila":  "audio/anila/0586.mp3",
+                              "ilir":  "audio/ilir/0586.mp3"
+                          },
+                  "Numri është nëntë.":  {
+                                             "anila":  "audio/anila/0292.mp3",
+                                             "ilir":  "audio/ilir/0292.mp3"
+                                         },
+                  "herët":  {
+                                "anila":  "audio/anila/0578.mp3",
+                                "ilir":  "audio/ilir/0578.mp3"
+                            },
+                  "Kur vjen treni?":  {
+                                          "anila":  "audio/anila/0395.mp3",
+                                          "ilir":  "audio/ilir/0395.mp3"
+                                      },
+                  "nëntë":  {
+                                "anila":  "audio/anila/0144.mp3",
+                                "ilir":  "audio/ilir/0144.mp3"
+                            },
+                  "Nuk flas mirë shqip.":  {
+                                               "anila":  "audio/anila/0314.mp3",
+                                               "ilir":  "audio/ilir/0314.mp3"
+                                           },
+                  "Dua bukë.":  {
+                                    "anila":  "audio/anila/0217.mp3",
+                                    "ilir":  "audio/ilir/0217.mp3"
+                                },
+                  "Dua një çaj.":  {
+                                       "anila":  "audio/anila/0355.mp3",
+                                       "ilir":  "audio/ilir/0355.mp3"
+                                   },
+                  "spitali":  {
+                                  "anila":  "audio/anila/0594.mp3",
+                                  "ilir":  "audio/ilir/0594.mp3"
+                              },
+                  "çaj":  {
+                              "anila":  "audio/anila/0064.mp3",
+                              "ilir":  "audio/ilir/0064.mp3"
+                          },
+                  "h":  {
+                            "anila":  "audio/anila/0012.mp3",
+                            "ilir":  "audio/ilir/0012.mp3"
+                        },
+                  "madhësi":  {
+                                  "anila":  "audio/anila/0619.mp3",
+                                  "ilir":  "audio/ilir/0619.mp3"
+                              },
+                  "Për dy net.":  {
+                                      "anila":  "audio/anila/0406.mp3",
+                                      "ilir":  "audio/ilir/0406.mp3"
+                                  },
+                  "sh":  {
+                             "anila":  "audio/anila/0027.mp3",
+                             "ilir":  "audio/ilir/0027.mp3"
+                         },
+                  "Një tavolinë për dy.":  {
+                                               "anila":  "audio/anila/0367.mp3",
+                                               "ilir":  "audio/ilir/0367.mp3"
+                                           },
+                  "kartë":  {
+                                "anila":  "audio/anila/0610.mp3",
+                                "ilir":  "audio/ilir/0610.mp3"
+                            },
+                  "Bora është e bardhë.":  {
+                                               "anila":  "audio/anila/0252.mp3",
+                                               "ilir":  "audio/ilir/0252.mp3"
+                                           },
+                  "paguaj":  {
+                                 "anila":  "audio/anila/0608.mp3",
+                                 "ilir":  "audio/ilir/0608.mp3"
+                             },
+                  "mace":  {
+                               "anila":  "audio/anila/0077.mp3",
+                               "ilir":  "audio/ilir/0077.mp3"
+                           },
+                  "djathtë":  {
+                                  "anila":  "audio/anila/0628.mp3",
+                                  "ilir":  "audio/ilir/0628.mp3"
+                              },
+                  "Më jepni ujë.":  {
+                                        "anila":  "audio/anila/0464.mp3",
+                                        "ilir":  "audio/ilir/0464.mp3"
+                                    },
+                  "Pa":  {
+                             "anila":  "audio/anila/0598.mp3",
+                             "ilir":  "audio/ilir/0598.mp3"
+                         },
+                  "Nëna ime është këtu.":  {
+                                               "anila":  "audio/anila/0435.mp3",
+                                               "ilir":  "audio/ilir/0435.mp3"
+                                           },
+                  "p":  {
+                            "anila":  "audio/anila/0022.mp3",
+                            "ilir":  "audio/ilir/0022.mp3"
+                        },
+                  "Bora":  {
+                               "anila":  "audio/anila/0521.mp3",
+                               "ilir":  "audio/ilir/0521.mp3"
+                           },
+                  "gati":  {
+                               "anila":  "audio/anila/0699.mp3",
+                               "ilir":  "audio/ilir/0699.mp3"
+                           },
+                  "lexoj":  {
+                                "anila":  "audio/anila/0131.mp3",
+                                "ilir":  "audio/ilir/0131.mp3"
+                            },
+                  "Sot është e diel.":  {
+                                            "anila":  "audio/anila/0342.mp3",
+                                            "ilir":  "audio/ilir/0342.mp3"
+                                        },
+                  "Hap derën.":  {
+                                     "anila":  "audio/anila/0320.mp3",
+                                     "ilir":  "audio/ilir/0320.mp3"
+                                 },
+                  "Sot është e shtunë.":  {
+                                              "anila":  "audio/anila/0341.mp3",
+                                              "ilir":  "audio/ilir/0341.mp3"
+                                          },
+                  "qumësht":  {
+                                  "anila":  "audio/anila/0169.mp3",
+                                  "ilir":  "audio/ilir/0169.mp3"
+                              },
+                  "Paguaj me kartë.":  {
+                                           "anila":  "audio/anila/0370.mp3",
+                                           "ilir":  "audio/ilir/0370.mp3"
+                                       },
+                  "Për një natë.":  {
+                                        "anila":  "audio/anila/0405.mp3",
+                                        "ilir":  "audio/ilir/0405.mp3"
+                                    },
+                  "punë":  {
+                               "anila":  "audio/anila/0097.mp3",
+                               "ilir":  "audio/ilir/0097.mp3"
+                           },
+                  "premte":  {
+                                 "anila":  "audio/anila/0583.mp3",
+                                 "ilir":  "audio/ilir/0583.mp3"
+                             },
+                  "Jam në shkollë.":  {
+                                          "anila":  "audio/anila/0228.mp3",
+                                          "ilir":  "audio/ilir/0228.mp3"
+                                      },
+                  "Kam një makinë.":  {
+                                          "anila":  "audio/anila/0209.mp3",
+                                          "ilir":  "audio/ilir/0209.mp3"
+                                      },
+                  "peshk":  {
+                                "anila":  "audio/anila/0135.mp3",
+                                "ilir":  "audio/ilir/0135.mp3"
+                            },
+                  "s":  {
+                            "anila":  "audio/anila/0026.mp3",
+                            "ilir":  "audio/ilir/0026.mp3"
+                        },
+                  "Unë jam në qytet.":  {
+                                            "anila":  "audio/anila/0296.mp3",
+                                            "ilir":  "audio/ilir/0296.mp3"
+                                        },
+                  "v":  {
+                            "anila":  "audio/anila/0031.mp3",
+                            "ilir":  "audio/ilir/0031.mp3"
+                        },
+                  "Unë pi çaj.":  {
+                                      "anila":  "audio/anila/0224.mp3",
+                                      "ilir":  "audio/ilir/0224.mp3"
+                                  },
+                  "rri":  {
+                              "anila":  "audio/anila/0060.mp3",
+                              "ilir":  "audio/ilir/0060.mp3"
+                          },
+                  "gruaja":  {
+                                 "anila":  "audio/anila/0677.mp3",
+                                 "ilir":  "audio/ilir/0677.mp3"
+                             },
+                  "peshqir":  {
+                                  "anila":  "audio/anila/0671.mp3",
+                                  "ilir":  "audio/ilir/0671.mp3"
+                              },
+                  "flas":  {
+                               "anila":  "audio/anila/0108.mp3",
+                               "ilir":  "audio/ilir/0108.mp3"
+                           },
+                  "Uji është i ftohtë.":  {
+                                              "anila":  "audio/anila/0251.mp3",
+                                              "ilir":  "audio/ilir/0251.mp3"
+                                          },
+                  "shtunë":  {
+                                 "anila":  "audio/anila/0584.mp3",
+                                 "ilir":  "audio/ilir/0584.mp3"
+                             },
+                  "Po bie borë.":  {
+                                       "anila":  "audio/anila/0421.mp3",
+                                       "ilir":  "audio/ilir/0421.mp3"
+                                   },
+                  "Dua një biletë.":  {
+                                          "anila":  "audio/anila/0392.mp3",
+                                          "ilir":  "audio/ilir/0392.mp3"
+                                      },
+                  "A është e mbyllur?":  {
+                                             "anila":  "audio/anila/0467.mp3",
+                                             "ilir":  "audio/ilir/0467.mp3"
+                                         },
+                  "bardhë":  {
+                                 "anila":  "audio/anila/0155.mp3",
+                                 "ilir":  "audio/ilir/0155.mp3"
+                             },
+                  "orë":  {
+                              "anila":  "audio/anila/0065.mp3",
+                              "ilir":  "audio/ilir/0065.mp3"
+                          },
+                  "para":  {
+                               "anila":  "audio/anila/0635.mp3",
+                               "ilir":  "audio/ilir/0635.mp3"
+                           },
+                  "shi":  {
+                              "anila":  "audio/anila/0053.mp3",
+                              "ilir":  "audio/ilir/0053.mp3"
+                          },
+                  "këtu":  {
+                               "anila":  "audio/anila/0091.mp3",
+                               "ilir":  "audio/ilir/0091.mp3"
+                           },
+                  "Unë punoj.":  {
+                                     "anila":  "audio/anila/0234.mp3",
+                                     "ilir":  "audio/ilir/0234.mp3"
+                                 },
+                  "dua":  {
+                              "anila":  "audio/anila/0054.mp3",
+                              "ilir":  "audio/ilir/0054.mp3"
+                          },
+                  "stacionit":  {
+                                    "anila":  "audio/anila/0632.mp3",
+                                    "ilir":  "audio/ilir/0632.mp3"
+                                },
+                  "Shihemi më vonë.":  {
+                                           "anila":  "audio/anila/0330.mp3",
+                                           "ilir":  "audio/ilir/0330.mp3"
+                                       },
+                  "shtrenjtë":  {
+                                    "anila":  "audio/anila/0612.mp3",
+                                    "ilir":  "audio/ilir/0612.mp3"
+                                },
+                  "Çfarë ore është?":  {
+                                           "anila":  "audio/anila/0331.mp3",
+                                           "ilir":  "audio/ilir/0331.mp3"
+                                       },
+                  "Kam uri.":  {
+                                   "anila":  "audio/anila/0343.mp3",
+                                   "ilir":  "audio/ilir/0343.mp3"
+                               },
+                  "Ku është çanta?":  {
+                                          "anila":  "audio/anila/0283.mp3",
+                                          "ilir":  "audio/ilir/0283.mp3"
+                                      },
+                  "vajza":  {
+                                "anila":  "audio/anila/0679.mp3",
+                                "ilir":  "audio/ilir/0679.mp3"
+                            },
+                  "Moti është i keq.":  {
+                                            "anila":  "audio/anila/0426.mp3",
+                                            "ilir":  "audio/ilir/0426.mp3"
+                                        },
+                  "supermarketi":  {
+                                       "anila":  "audio/anila/0620.mp3",
+                                       "ilir":  "audio/ilir/0620.mp3"
+                                   },
+                  "Çelësi është në çantë.":  {
+                                                 "anila":  "audio/anila/0440.mp3",
+                                                 "ilir":  "audio/ilir/0440.mp3"
+                                             },
+                  "dritare":  {
+                                  "anila":  "audio/anila/0177.mp3",
+                                  "ilir":  "audio/ilir/0177.mp3"
+                              },
+                  "Mirupafshim!":  {
+                                       "anila":  "audio/anila/0189.mp3",
+                                       "ilir":  "audio/ilir/0189.mp3"
+                                   },
+                  "Dhoma është e madhe.":  {
+                                               "anila":  "audio/anila/0415.mp3",
+                                               "ilir":  "audio/ilir/0415.mp3"
+                                           },
+                  "diel":  {
+                               "anila":  "audio/anila/0585.mp3",
+                               "ilir":  "audio/ilir/0585.mp3"
+                           },
+                  "r":  {
+                            "anila":  "audio/anila/0024.mp3",
+                            "ilir":  "audio/ilir/0024.mp3"
+                        },
+                  "gojë":  {
+                               "anila":  "audio/anila/0096.mp3",
+                               "ilir":  "audio/ilir/0096.mp3"
+                           },
+                  "Dëgjoj muzikë.":  {
+                                         "anila":  "audio/anila/0318.mp3",
+                                         "ilir":  "audio/ilir/0318.mp3"
+                                     },
+                  "Është shumë ngrohtë.":  {
+                                               "anila":  "audio/anila/0423.mp3",
+                                               "ilir":  "audio/ilir/0423.mp3"
+                                           },
+                  "Ka Wi-Fi?":  {
+                                    "anila":  "audio/anila/0411.mp3",
+                                    "ilir":  "audio/ilir/0411.mp3"
+                                },
+                  "baba":  {
+                               "anila":  "audio/anila/0074.mp3",
+                               "ilir":  "audio/ilir/0074.mp3"
+                           },
+                  "o":  {
+                            "anila":  "audio/anila/0021.mp3",
+                            "ilir":  "audio/ilir/0021.mp3"
+                        },
+                  "Unë pi qumësht.":  {
+                                          "anila":  "audio/anila/0276.mp3",
+                                          "ilir":  "audio/ilir/0276.mp3"
+                                      },
+                  "kjo":  {
+                              "anila":  "audio/anila/0508.mp3",
+                              "ilir":  "audio/ilir/0508.mp3"
+                          },
+                  "Quhem Ana.":  {
+                                     "anila":  "audio/anila/0303.mp3",
+                                     "ilir":  "audio/ilir/0303.mp3"
+                                 },
+                  "Menunë":  {
+                                 "anila":  "audio/anila/0606.mp3",
+                                 "ilir":  "audio/ilir/0606.mp3"
+                             },
+                  "libri":  {
+                                "anila":  "audio/anila/0686.mp3",
+                                "ilir":  "audio/ilir/0686.mp3"
+                            },
+                  "dy":  {
+                             "anila":  "audio/anila/0543.mp3",
+                             "ilir":  "audio/ilir/0543.mp3"
+                         },
+                  "Me qumësht, ju lutem.":  {
+                                                "anila":  "audio/anila/0359.mp3",
+                                                "ilir":  "audio/ilir/0359.mp3"
+                                            },
+                  "djali":  {
+                                "anila":  "audio/anila/0678.mp3",
+                                "ilir":  "audio/ilir/0678.mp3"
+                            },
+                  "niset":  {
+                                "anila":  "audio/anila/0638.mp3",
+                                "ilir":  "audio/ilir/0638.mp3"
+                            },
+                  "vajzë":  {
+                                "anila":  "audio/anila/0126.mp3",
+                                "ilir":  "audio/ilir/0126.mp3"
+                            },
+                  "lirë":  {
+                               "anila":  "audio/anila/0613.mp3",
+                               "ilir":  "audio/ilir/0613.mp3"
+                           },
+                  "Sot bie shi.":  {
+                                       "anila":  "audio/anila/0241.mp3",
+                                       "ilir":  "audio/ilir/0241.mp3"
+                                   },
+                  "ajo":  {
+                              "anila":  "audio/anila/0037.mp3",
+                              "ilir":  "audio/ilir/0037.mp3"
+                          },
+                  "Ku është supermarketi?":  {
+                                                 "anila":  "audio/anila/0378.mp3",
+                                                 "ilir":  "audio/ilir/0378.mp3"
+                                             },
+                  "bukë":  {
+                               "anila":  "audio/anila/0079.mp3",
+                               "ilir":  "audio/ilir/0079.mp3"
+                           },
+                  "sot":  {
+                              "anila":  "audio/anila/0044.mp3",
+                              "ilir":  "audio/ilir/0044.mp3"
+                          },
+                  "Faturën, ju lutem.":  {
+                                             "anila":  "audio/anila/0257.mp3",
+                                             "ilir":  "audio/ilir/0257.mp3"
+                                         },
+                  "Dua mëngjes.":  {
+                                       "anila":  "audio/anila/0361.mp3",
+                                       "ilir":  "audio/ilir/0361.mp3"
+                                   },
+                  "thotë":  {
+                                "anila":  "audio/anila/0561.mp3",
+                                "ilir":  "audio/ilir/0561.mp3"
+                            },
+                  "vend":  {
+                               "anila":  "audio/anila/0646.mp3",
+                               "ilir":  "audio/ilir/0646.mp3"
+                           },
+                  "Jam mirë.":  {
+                                    "anila":  "audio/anila/0194.mp3",
+                                    "ilir":  "audio/ilir/0194.mp3"
+                                },
+                  "posta":  {
+                                "anila":  "audio/anila/0623.mp3",
+                                "ilir":  "audio/ilir/0623.mp3"
+                            },
+                  "dje":  {
+                              "anila":  "audio/anila/0045.mp3",
+                              "ilir":  "audio/ilir/0045.mp3"
+                          },
+                  "rezervim":  {
+                                   "anila":  "audio/anila/0650.mp3",
+                                   "ilir":  "audio/ilir/0650.mp3"
+                               },
+                  "Unë jam në dyqan.":  {
+                                            "anila":  "audio/anila/0298.mp3",
+                                            "ilir":  "audio/ilir/0298.mp3"
+                                        },
+                  "Holanda":  {
+                                  "anila":  "audio/anila/0507.mp3",
+                                  "ilir":  "audio/ilir/0507.mp3"
+                              },
+                  "Drita nuk punon.":  {
+                                           "anila":  "audio/anila/0418.mp3",
+                                           "ilir":  "audio/ilir/0418.mp3"
+                                       },
+                  "hoteli":  {
+                                 "anila":  "audio/anila/0528.mp3",
+                                 "ilir":  "audio/ilir/0528.mp3"
+                             },
+                  "Numri është pesë.":  {
+                                            "anila":  "audio/anila/0288.mp3",
+                                            "ilir":  "audio/ilir/0288.mp3"
+                                        },
+                  "ulem":  {
+                               "anila":  "audio/anila/0694.mp3",
+                               "ilir":  "audio/ilir/0694.mp3"
+                           },
+                  "Është ora një.":  {
+                                         "anila":  "audio/anila/0332.mp3",
+                                         "ilir":  "audio/ilir/0332.mp3"
+                                     },
+                  "gjelbër":  {
+                                  "anila":  "audio/anila/0171.mp3",
+                                  "ilir":  "audio/ilir/0171.mp3"
+                              },
+                  "Udhëtim të mbarë!":  {
+                                            "anila":  "audio/anila/0482.mp3",
+                                            "ilir":  "audio/ilir/0482.mp3"
+                                        },
+                  "Fjalëkalimi, ju lutem.":  {
+                                                 "anila":  "audio/anila/0412.mp3",
+                                                 "ilir":  "audio/ilir/0412.mp3"
+                                             },
+                  "Është shumë ftohtë.":  {
+                                              "anila":  "audio/anila/0424.mp3",
+                                              "ilir":  "audio/ilir/0424.mp3"
+                                          },
+                  "Unë mësoj.":  {
+                                     "anila":  "audio/anila/0235.mp3",
+                                     "ilir":  "audio/ilir/0235.mp3"
+                                 },
+                  "Numri është tetë.":  {
+                                            "anila":  "audio/anila/0291.mp3",
+                                            "ilir":  "audio/ilir/0291.mp3"
+                                        },
+                  "muzikë":  {
+                                 "anila":  "audio/anila/0564.mp3",
+                                 "ilir":  "audio/ilir/0564.mp3"
+                             },
+                  "Uji":  {
+                              "anila":  "audio/anila/0520.mp3",
+                              "ilir":  "audio/ilir/0520.mp3"
+                          },
+                  "Nuk kuptoj.":  {
+                                      "anila":  "audio/anila/0196.mp3",
+                                      "ilir":  "audio/ilir/0196.mp3"
+                                  },
+                  "kush":  {
+                               "anila":  "audio/anila/0111.mp3",
+                               "ilir":  "audio/ilir/0111.mp3"
+                           },
+                  "ato":  {
+                              "anila":  "audio/anila/0039.mp3",
+                              "ilir":  "audio/ilir/0039.mp3"
+                          },
+                  "Ku është çelësi?":  {
+                                           "anila":  "audio/anila/0282.mp3",
+                                           "ilir":  "audio/ilir/0282.mp3"
+                                       },
+                  "Është herët.":  {
+                                       "anila":  "audio/anila/0334.mp3",
+                                       "ilir":  "audio/ilir/0334.mp3"
+                                   },
+                  "Në të majtë.":  {
+                                       "anila":  "audio/anila/0386.mp3",
+                                       "ilir":  "audio/ilir/0386.mp3"
+                                   },
+                  "Numri është shtatë.":  {
+                                              "anila":  "audio/anila/0290.mp3",
+                                              "ilir":  "audio/ilir/0290.mp3"
+                                          },
+                  "Si thuhet në shqip?":  {
+                                              "anila":  "audio/anila/0313.mp3",
+                                              "ilir":  "audio/ilir/0313.mp3"
+                                          },
+                  "Unë ha peshk.":  {
+                                        "anila":  "audio/anila/0268.mp3",
+                                        "ilir":  "audio/ilir/0268.mp3"
+                                    },
+                  "Shkoni":  {
+                                 "anila":  "audio/anila/0530.mp3",
+                                 "ilir":  "audio/ilir/0530.mp3"
+                             },
+                  "f":  {
+                            "anila":  "audio/anila/0009.mp3",
+                            "ilir":  "audio/ilir/0009.mp3"
+                        },
+                  "im":  {
+                             "anila":  "audio/anila/0676.mp3",
+                             "ilir":  "audio/ilir/0676.mp3"
+                         },
+                  "Jam e lumtur.":  {
+                                        "anila":  "audio/anila/0347.mp3",
+                                        "ilir":  "audio/ilir/0347.mp3"
+                                    },
+                  "E kuptoj.":  {
+                                    "anila":  "audio/anila/0197.mp3",
+                                    "ilir":  "audio/ilir/0197.mp3"
+                                },
+                  "Unë ha oriz.":  {
+                                       "anila":  "audio/anila/0222.mp3",
+                                       "ilir":  "audio/ilir/0222.mp3"
+                                   },
+                  "Shqipëria":  {
+                                    "anila":  "audio/anila/0551.mp3",
+                                    "ilir":  "audio/ilir/0551.mp3"
+                                },
+                  "Shkoj në punë.":  {
+                                         "anila":  "audio/anila/0232.mp3",
+                                         "ilir":  "audio/ilir/0232.mp3"
+                                     },
+                  "Dua një ujë.":  {
+                                       "anila":  "audio/anila/0354.mp3",
+                                       "ilir":  "audio/ilir/0354.mp3"
+                                   },
+                  "dhe":  {
+                              "anila":  "audio/anila/0041.mp3",
+                              "ilir":  "audio/ilir/0041.mp3"
+                          },
+                  "Sot është e premte.":  {
+                                              "anila":  "audio/anila/0340.mp3",
+                                              "ilir":  "audio/ilir/0340.mp3"
+                                          },
+                  "Mirëmbrëma":  {
+                                     "anila":  "audio/anila/0488.mp3",
+                                     "ilir":  "audio/ilir/0488.mp3"
+                                 },
+                  "Dritarja është e mbyllur.":  {
+                                                    "anila":  "audio/anila/0447.mp3",
+                                                    "ilir":  "audio/ilir/0447.mp3"
+                                                },
+                  "treni":  {
+                                "anila":  "audio/anila/0641.mp3",
+                                "ilir":  "audio/ilir/0641.mp3"
+                            },
+                  "Ku është telefoni?":  {
+                                             "anila":  "audio/anila/0280.mp3",
+                                             "ilir":  "audio/ilir/0280.mp3"
+                                         },
+                  "Unë ha supë.":  {
+                                       "anila":  "audio/anila/0221.mp3",
+                                       "ilir":  "audio/ilir/0221.mp3"
+                                   },
+                  "Dua qumësht.":  {
+                                       "anila":  "audio/anila/0277.mp3",
+                                       "ilir":  "audio/ilir/0277.mp3"
+                                   },
+                  "Shumë mirë.":  {
+                                      "anila":  "audio/anila/0474.mp3",
+                                      "ilir":  "audio/ilir/0474.mp3"
+                                  },
+                  "dorë":  {
+                               "anila":  "audio/anila/0094.mp3",
+                               "ilir":  "audio/ilir/0094.mp3"
+                           },
+                  "jeni":  {
+                               "anila":  "audio/anila/0544.mp3",
+                               "ilir":  "audio/ilir/0544.mp3"
+                           },
+                  "t":  {
+                            "anila":  "audio/anila/0028.mp3",
+                            "ilir":  "audio/ilir/0028.mp3"
+                        },
+                  "Mirëdita":  {
+                                   "anila":  "audio/anila/0487.mp3",
+                                   "ilir":  "audio/ilir/0487.mp3"
+                               },
+                  "Dua mollë.":  {
+                                     "anila":  "audio/anila/0273.mp3",
+                                     "ilir":  "audio/ilir/0273.mp3"
+                                 },
+                  "Po ju?":  {
+                                 "anila":  "audio/anila/0302.mp3",
+                                 "ilir":  "audio/ilir/0302.mp3"
+                             },
+                  "shkon":  {
+                                "anila":  "audio/anila/0643.mp3",
+                                "ilir":  "audio/ilir/0643.mp3"
+                            },
+                  "n":  {
+                            "anila":  "audio/anila/0019.mp3",
+                            "ilir":  "audio/ilir/0019.mp3"
+                        },
+                  "Unë jam në hotel.":  {
+                                            "anila":  "audio/anila/0297.mp3",
+                                            "ilir":  "audio/ilir/0297.mp3"
+                                        },
+                  "kopsht":  {
+                                 "anila":  "audio/anila/0161.mp3",
+                                 "ilir":  "audio/ilir/0161.mp3"
+                             },
+                  "Hap dritaren.":  {
+                                        "anila":  "audio/anila/0322.mp3",
+                                        "ilir":  "audio/ilir/0322.mp3"
+                                    },
+                  "Sot është e mërkurë.":  {
+                                               "anila":  "audio/anila/0338.mp3",
+                                               "ilir":  "audio/ilir/0338.mp3"
+                                           },
+                  "Gjithçka":  {
+                                   "anila":  "audio/anila/0701.mp3",
+                                   "ilir":  "audio/ilir/0701.mp3"
+                               },
+                  "ndihmoni":  {
+                                   "anila":  "audio/anila/0559.mp3",
+                                   "ilir":  "audio/ilir/0559.mp3"
+                               },
+                  "Unë fle.":  {
+                                   "anila":  "audio/anila/0238.mp3",
+                                   "ilir":  "audio/ilir/0238.mp3"
+                               },
+                  "Më jepni këtë.":  {
+                                         "anila":  "audio/anila/0463.mp3",
+                                         "ilir":  "audio/ilir/0463.mp3"
+                                     },
+                  "Ju":  {
+                             "anila":  "audio/anila/0525.mp3",
+                             "ilir":  "audio/ilir/0525.mp3"
+                         },
+                  "Ku është shtëpia?":  {
+                                            "anila":  "audio/anila/0278.mp3",
+                                            "ilir":  "audio/ilir/0278.mp3"
+                                        },
+                  "Është shumë shtrenjtë.":  {
+                                                 "anila":  "audio/anila/0373.mp3",
+                                                 "ilir":  "audio/ilir/0373.mp3"
+                                             },
+                  "gjuhë":  {
+                                "anila":  "audio/anila/0139.mp3",
+                                "ilir":  "audio/ilir/0139.mp3"
+                            },
+                  "Dritarja është e hapur.":  {
+                                                  "anila":  "audio/anila/0446.mp3",
+                                                  "ilir":  "audio/ilir/0446.mp3"
+                                              },
+                  "Ky është vëllai.":  {
+                                           "anila":  "audio/anila/0206.mp3",
+                                           "ilir":  "audio/ilir/0206.mp3"
+                                       },
+                  "Dua ujë.":  {
+                                   "anila":  "audio/anila/0214.mp3",
+                                   "ilir":  "audio/ilir/0214.mp3"
+                               },
+                  "Ku është banka?":  {
+                                          "anila":  "audio/anila/0380.mp3",
+                                          "ilir":  "audio/ilir/0380.mp3"
+                                      },
+                  "aeroporti":  {
+                                    "anila":  "audio/anila/0624.mp3",
+                                    "ilir":  "audio/ilir/0624.mp3"
+                                },
+                  "A flisni anglisht?":  {
+                                             "anila":  "audio/anila/0309.mp3",
+                                             "ilir":  "audio/ilir/0309.mp3"
+                                         },
+                  "xh":  {
+                             "anila":  "audio/anila/0033.mp3",
+                             "ilir":  "audio/ilir/0033.mp3"
+                         },
+                  "Natën e mirë!":  {
+                                        "anila":  "audio/anila/0484.mp3",
+                                        "ilir":  "audio/ilir/0484.mp3"
+                                    },
+                  "Ku është plazhi?":  {
+                                           "anila":  "audio/anila/0383.mp3",
+                                           "ilir":  "audio/ilir/0383.mp3"
+                                       },
+                  "Mund të ulem?":  {
+                                        "anila":  "audio/anila/0453.mp3",
+                                        "ilir":  "audio/ilir/0453.mp3"
+                                    },
+                  "autobusi":  {
+                                   "anila":  "audio/anila/0639.mp3",
+                                   "ilir":  "audio/ilir/0639.mp3"
+                               },
+                  "Ky është djali im.":  {
+                                             "anila":  "audio/anila/0430.mp3",
+                                             "ilir":  "audio/ilir/0430.mp3"
+                                         },
+                  "Shihemi":  {
+                                  "anila":  "audio/anila/0573.mp3",
+                                  "ilir":  "audio/ilir/0573.mp3"
+                              },
+                  "Ulu":  {
+                              "anila":  "audio/anila/0569.mp3",
+                              "ilir":  "audio/ilir/0569.mp3"
+                          },
+                  "Dera":  {
+                               "anila":  "audio/anila/0689.mp3",
+                               "ilir":  "audio/ilir/0689.mp3"
+                           },
+                  "Dua djathë.":  {
+                                      "anila":  "audio/anila/0271.mp3",
+                                      "ilir":  "audio/ilir/0271.mp3"
+                                  },
+                  "kohë":  {
+                               "anila":  "audio/anila/0087.mp3",
+                               "ilir":  "audio/ilir/0087.mp3"
+                           },
+                  "makina":  {
+                                 "anila":  "audio/anila/0683.mp3",
+                                 "ilir":  "audio/ilir/0683.mp3"
+                             },
+                  "ndihmë":  {
+                                 "anila":  "audio/anila/0157.mp3",
+                                 "ilir":  "audio/ilir/0157.mp3"
+                             },
+                  "q":  {
+                            "anila":  "audio/anila/0023.mp3",
+                            "ilir":  "audio/ilir/0023.mp3"
+                        },
+                  "Dua të pi.":  {
+                                     "anila":  "audio/anila/0219.mp3",
+                                     "ilir":  "audio/ilir/0219.mp3"
+                                 },
+                  "çanta":  {
+                                "anila":  "audio/anila/0541.mp3",
+                                "ilir":  "audio/ilir/0541.mp3"
+                            },
+                  "gjashtë":  {
+                                  "anila":  "audio/anila/0184.mp3",
+                                  "ilir":  "audio/ilir/0184.mp3"
+                              },
+                  "Para shkollës.":  {
+                                         "anila":  "audio/anila/0391.mp3",
+                                         "ilir":  "audio/ilir/0391.mp3"
+                                     },
+                  "kokë":  {
+                               "anila":  "audio/anila/0095.mp3",
+                               "ilir":  "audio/ilir/0095.mp3"
+                           },
+                  "jepni":  {
+                                "anila":  "audio/anila/0698.mp3",
+                                "ilir":  "audio/ilir/0698.mp3"
+                            },
+                  "Shkoj tani.":  {
+                                      "anila":  "audio/anila/0327.mp3",
+                                      "ilir":  "audio/ilir/0327.mp3"
+                                  },
+                  "Me":  {
+                             "anila":  "audio/anila/0609.mp3",
+                             "ilir":  "audio/ilir/0609.mp3"
+                         },
+                  "Telefoni është në tavolinë.":  {
+                                                      "anila":  "audio/anila/0439.mp3",
+                                                      "ilir":  "audio/ilir/0439.mp3"
+                                                  },
+                  "Dua çaj.":  {
+                                   "anila":  "audio/anila/0215.mp3",
+                                   "ilir":  "audio/ilir/0215.mp3"
+                               },
+                  "Në të djathtë.":  {
+                                         "anila":  "audio/anila/0387.mp3",
+                                         "ilir":  "audio/ilir/0387.mp3"
+                                     },
+                  "Ndoshta":  {
+                                  "anila":  "audio/anila/0705.mp3",
+                                  "ilir":  "audio/ilir/0705.mp3"
+                              },
+                  "Unë flas shqip.":  {
+                                          "anila":  "audio/anila/0202.mp3",
+                                          "ilir":  "audio/ilir/0202.mp3"
+                                      },
+                  "Sot është e enjte.":  {
+                                             "anila":  "audio/anila/0339.mp3",
+                                             "ilir":  "audio/ilir/0339.mp3"
+                                         },
+                  "Shkruaj një mesazh.":  {
+                                              "anila":  "audio/anila/0317.mp3",
+                                              "ilir":  "audio/ilir/0317.mp3"
+                                          },
+                  "Kjo është gruaja ime.":  {
+                                                "anila":  "audio/anila/0429.mp3",
+                                                "ilir":  "audio/ilir/0429.mp3"
+                                            },
+                  "Ndoshta.":  {
+                                   "anila":  "audio/anila/0477.mp3",
+                                   "ilir":  "audio/ilir/0477.mp3"
+                               },
+                  "Prit":  {
+                               "anila":  "audio/anila/0571.mp3",
+                               "ilir":  "audio/ilir/0571.mp3"
+                           },
+                  "karrige":  {
+                                  "anila":  "audio/anila/0178.mp3",
+                                  "ilir":  "audio/ilir/0178.mp3"
+                              }
+              }
+}

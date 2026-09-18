@@ -1,0 +1,27 @@
+ALBANESE LEESTRAINING - ONTBREKENDE 750-WOORDEN AUDIO
+
+Huidige controle op basis van de aangeleverde bestanden:
+- 750 unieke oefenwoorden
+- 620 woorden missen nu Anila en/of Ilir in audio-map.json
+
+GEBRUIK
+1. Kopieer MAAK_ONTBREKENDE_750_AUDIO.ps1 en START_ONTBREKENDE_750_AUDIO.bat
+   naar de HOOFDMAP van je lokale GitHub-map Albanees-leestraining.
+2. Zorg dat daar ook staan:
+   audio-map.json
+   word-data-750.json
+   audio\anila
+   audio\ilir
+3. Dubbelklik START_ONTBREKENDE_750_AUDIO.bat.
+4. Als het script erom vraagt: kopieer Azure Speech KEY 1 in Azure.
+   PLAK DE KEY NIET IN CHAT. Alleen Windows-klembord.
+5. Druk Enter.
+6. Wacht tot 'KLAAR EN GECONTROLEERD.' verschijnt.
+7. Daarna GitHub Desktop: Commit to main -> Push origin.
+
+VEILIGHEID
+- Bestaande MP3's worden niet overschreven.
+- Nieuwe nummers beginnen boven het hoogste bestaande nummer.
+- audio-map.json krijgt eerst een backup.
+- Een mapping wordt pas toegevoegd als zowel Anila als Ilir succesvol zijn gemaakt.
+- Eindcontrole controleert alle 750 woorden, bestanden en dubbele koppelingen.
