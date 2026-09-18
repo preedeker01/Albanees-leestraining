@@ -1,0 +1,37 @@
+ALBANEES - WOORD VOOR WOORD - SCHONE BASIS
+
+Deze versie is uitsluitend voor de Albanese app.
+
+Basis:
+- teruggezet naar de door jou aangeleverde laatste goede albanees_pwa_safari-versie
+- teruggezet naar de bijbehorende goede audio-map en 484 Anila + 484 Ilir MP3's
+- bestaande 300 volledige zinnen en hun MP3-koppelingen blijven ongewijzigd
+
+Nieuw:
+- tik op een korte zin
+- ieder woord verschijnt groot
+- ongeveer 1 seconde kijktijd
+- dat woord wordt met de gekozen Azure-stem uitgesproken
+- daarna dezelfde woorden nogmaals sneller
+- tenslotte verschijnt en klinkt de volledige bestaande zin
+- Vertalen aan: Nederlandse vertaling blijft zichtbaar, uitspraak blijft dezelfde woord-voor-woord methode
+- tijdens woord-voor-woord is browser/Samsung TTS volledig uitgeschakeld
+
+Voor de 300 zinnen zijn 331 unieke exacte woordvormen nodig.
+In de goede audioset ontbreken daarvan 252.
+Alleen die 252 woorden worden nieuw gemaakt; bestaande mappings worden nooit veranderd.
+
+INSTALLATIE / TEST
+1. Maak voor de zekerheid een kopie van je huidige lokale GitHub-map.
+2. Verwijder in je lokale Albanese repo de huidige map 'audio' en het huidige 'audio-map.json'.
+   Dit voorkomt dat foute v10/v11 MP3's blijven staan.
+3. Kopieer ALLE bestanden en de map 'audio' uit deze ZIP naar de hoofdmap van Albanees-leestraining.
+4. Kopieer Azure Speech KEY 1 naar het Windows-klembord.
+5. Dubbelklik START_WOORD_VOOR_WOORD.bat.
+6. Wacht op: KLAAR EN GECONTROLEERD.
+7. Test bij voorkeur eerst lokaal / controleer de bestanden.
+8. Daarna GitHub Desktop:
+   Summary: Albanese woord voor woord schone versie
+   Commit to main -> Push origin.
+
+NIET PUSHEN als het script 'CONTROLEFOUT' meldt.
