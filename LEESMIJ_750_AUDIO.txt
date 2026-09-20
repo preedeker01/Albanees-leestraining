@@ -1,27 +1,29 @@
-ALBANESE LEESTRAINING - ONTBREKENDE 750-WOORDEN AUDIO
+ALBANESE LEESTRAINING — AUDIOHULPSCRIPTS
 
-Huidige controle op basis van de aangeleverde bestanden:
-- 750 unieke oefenwoorden
-- 620 woorden missen nu Anila en/of Ilir in audio-map.json
+Bij de controle van deze ZIP hebben alle 750 oefenwoorden, 300 volledige zinnen
+en benodigde losse zinwoorden koppelingen voor Anila én Ilir. Alle gekoppelde
+bestanden bestaan. Je hoeft GEEN nieuwe Azure-audio aan te maken voor deze ZIP.
 
-GEBRUIK
-1. Kopieer MAAK_ONTBREKENDE_750_AUDIO.ps1 en START_ONTBREKENDE_750_AUDIO.bat
-   naar de HOOFDMAP van je lokale GitHub-map Albanees-leestraining.
-2. Zorg dat daar ook staan:
-   audio-map.json
-   word-data-750.json
-   audio\anila
-   audio\ilir
-3. Dubbelklik START_ONTBREKENDE_750_AUDIO.bat.
-4. Als het script erom vraagt: kopieer Azure Speech KEY 1 in Azure.
-   PLAK DE KEY NIET IN CHAT. Alleen Windows-klembord.
-5. Druk Enter.
-6. Wacht tot 'KLAAR EN GECONTROLEERD.' verschijnt.
-7. Daarna GitHub Desktop: Commit to main -> Push origin.
+De bestaande hulpmiddelen blijven aanwezig voor later onderhoud:
+- START_ONTBREKENDE_750_AUDIO.bat -> MAAK_ONTBREKENDE_750_AUDIO.ps1
+- START_WOORD_VOOR_WOORD.bat -> MAAK_ONTBREKENDE_ZINWOORDEN.ps1
 
-VEILIGHEID
-- Bestaande MP3's worden niet overschreven.
-- Nieuwe nummers beginnen boven het hoogste bestaande nummer.
-- audio-map.json krijgt eerst een backup.
-- Een mapping wordt pas toegevoegd als zowel Anila als Ilir succesvol zijn gemaakt.
-- Eindcontrole controleert alle 750 woorden, bestanden en dubbele koppelingen.
+De scripts controleren nu ook of de gekoppelde bestanden bestaan en minimaal
+100 bytes bevatten. Dit is een eenvoudige bestandscontrole, geen decodering
+of inhoudelijke uitspraakcontrole. Geldige bestaande stemkoppelingen blijven
+behouden wanneer alleen de andere stem ontbreekt.
+Geslaagde woorden worden tussentijds opgeslagen, zodat een latere afgebroken
+Azure-aanvraag het eerdere werk niet uit de audiolijst laat verdwijnen.
+De backup van de zinwoordenlijst krijgt een tijdstempel.
+
+Als je later werkelijk audio moet aanvullen:
+1. Bewaar eerst een kopie van de repository.
+2. Start het passende BAT-bestand vanuit de repositoryhoofdmap in Windows.
+3. Alleen als er ontbrekende audio is: volg de instructie voor je eigen
+   Azure Speech-sleutel. Deel die sleutel niet in de repository.
+4. Controleer de uitvoer en gemaakte opnamen voordat je commit en pusht.
+5. Verhoog VERSION in service-worker.js bij de publicatie.
+
+Beperking: de Windows/PowerShell- en Azure-generatieprocedure is in deze
+controleomgeving niet uitgevoerd. Er zijn geen Azure-aanvragen verstuurd.
+De scripts zijn op hun gewijzigde logica gecontroleerd.

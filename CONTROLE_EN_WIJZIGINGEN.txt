@@ -1,0 +1,168 @@
+CONTROLE EN WIJZIGINGEN — ALBANESE LEESTRAINING
+Versie: 2026-09-20-1
+Bron: de aangeleverde ZIP 'Russisch evaluatie(1).ZIP'; de inhoud is Albanees.
+
+UITGEVOERD
+De oorspronkelijke app is eerst zonder bronwijzigingen geanalyseerd.
+De gebruiker heeft bevestigd dat de volledige zin na het afspelen in het
+focusvak moet blijven staan. Dit is verwerkt en getest.
+
+GEWIJZIGDE BESTAANDE BESTANDEN (7)
+1. index.html
+   - HTML teruggebracht tot de gebruikte schermen en bediening.
+   - CSS en JavaScript ondergebracht in styles.css en app.js.
+   - Ongebruikte, nooit getoonde laad-/toestemmingsvensters en de verborgen,
+     niet aangesloten verversknop verwijderd.
+   - Apart raster voor het woordvak en de vier zinnen.
+   - 'Albaneese' gecorrigeerd naar 'Albanese'.
+   - Zes-/zevenlettervoorbeelden vervangen door 'makinë' en 'telefon', woorden
+     die al in de oorspronkelijke inhoud voorkomen en aan de telling voldoen.
+2. service-worker.js
+   - Volledige kernset verplicht tijdens installatie.
+   - Nieuwe versie wacht tijdens gebruik op de knop Bijwerken.
+   - HTML, CSS, JavaScript en JSON blijven bij de actieve versie horen.
+   - Cache per app-adres en versie; geen blind wissen van andere appcaches.
+   - Volledige MP3-cache met ondersteuning voor bytebereiken.
+3. MAAK_ONTBREKENDE_750_AUDIO.ps1
+   - Ook controle op ontbrekende/zeer kleine gekoppelde bestanden.
+   - Bestaande geldige stemopnamen behouden bij aanvullen van de andere stem.
+   - Tussentijdse opslag van voltooide woorden.
+4. MAAK_ONTBREKENDE_ZINWOORDEN.ps1
+   - Dezelfde controles op bestanden en behoud van geldige stemopnamen.
+   - Hoogste nummer uit zowel bestanden als bestaande koppelingen bepaald.
+   - Backup met tijdstempel, pas wanneer er iets gegenereerd moet worden.
+   - Tussentijdse opslag van voltooide woorden; opruimen van nieuw aangemaakte
+     bestanden van een onvoltooid woord bij een afgebroken aanvraag.
+5. LEESMIJ_EERST.txt
+6. LEESMIJ_CACHEFIX.txt
+7. LEESMIJ_750_AUDIO.txt
+   - Oude, tegenstrijdige installatie-instructies vervangen door de actuele
+     installatie-, versie- en onderhoudsinstructies.
+
+NIEUWE BESTANDEN (3)
+1. app.js
+   - Bestaande oefengegevens en opgeschoonde bediening.
+   - Eén annuleerbare afspeelregeling, inclusief alle wachtmomenten.
+   - Goed-/foutgeluiden aangesloten; geen ontbrekende playSound-functie meer.
+   - Zoeken en Voorbeeld verwijderen de vertaling daadwerkelijk wanneer zij
+     de vertaalmodus uitschakelen.
+   - Audiolijst eenmaal tegelijk laden; genormaliseerde zoekindex voor audio.
+   - Veilige omgang met niet-beschikbare lokale opslag en spraak-API.
+   - Geen ongebruikte Nederlandse/Albanese browser-TTS-fallbackfuncties.
+   - Eerste-audiogebaar gebruikt hetzelfde audio-element en mag een inmiddels
+     gestarte oefening niet onderbreken.
+   - Updatecontrole bij openen, focus, online, zichtbaar worden en elke minuut.
+   - Bestaande worker-URL wordt tijdens migratie hergebruikt om een dubbele
+     update van dezelfde versie te voorkomen.
+2. styles.css
+   - Samengevoegde opmaak zonder de oude reeks overschrijvingen met !important.
+   - Vaste bedieningshoogten per bestaande schermoriëntatie.
+   - Vier gelijke zinrijen zonder focus; verhouding 2:1:1:1:1 met focus.
+   - Tekst wordt gemeten en zo nodig verkleind, zonder vakhoogten aan te passen.
+   - Ruimte voor schermranden en de vaste Home-knop.
+3. CONTROLE_EN_WIJZIGINGEN.txt
+   - Dit verslag.
+
+BEHOUDEN INHOUD
+- 36 Albanese letters en dubbelletters.
+- Alle 750 unieke oefenwoorden en hun vertalingen in word-data-750.json.
+- Alle 300 Albanese zinnen.
+- Alle 2.630 MP3's en beide WAV-bestanden zijn byte voor byte ongewijzigd.
+- audio-map.json, manifest.webmanifest en alle iconen zijn ongewijzigd.
+- Beide stemmen, toevalsvolgorde, hoofdlettervariatie, drie herhalingen bij
+  letters/woorden, voorbeeld, stop, mengen, zoeken en vertalen zijn behouden.
+- Zinnen: langzame woordronde, snelle woordronde, volledige bestaande zinopname.
+- De volledige zin blijft staan tot een volgende actie.
+- De oorspronkelijke reservewoordenlijst en de bijbehorende vertalingen
+  zijn inhoudelijk ongewijzigd. Zie de beperking hieronder.
+- Alle 52 MP3's zonder huidige koppeling en de twee identieke historische
+  JSON-backups blijven behouden. Ze worden niet door de app geladen.
+- De verborgen vijfde letterknop blijft verborgen, zoals in de oorspronkelijke app.
+- De .git-map is niet in de oplever-ZIP opgenomen; deze mag niet over de
+  bestaande repositorygeschiedenis worden gekopieerd.
+
+VIJF NEDERLANDSE ZINCORRECTIES
+'Waar is het auto?'      -> 'Waar is de auto?'
+'Waar is het telefoon?'  -> 'Waar is de telefoon?'
+'Waar is het sleutel?'   -> 'Waar is de sleutel?'
+'Waar is het tas?'       -> 'Waar is de tas?'
+'Ik ben in het winkel.'  -> 'Ik ben in de winkel.'
+De Albanese zin en de bijbehorende MP3 zijn hierbij niet gewijzigd.
+
+CONTROLES EN RESULTATEN
+1. Bestands- en gegevenscontrole
+   - JSON-bestanden leesbaar; JavaScript-syntaxis gecontroleerd.
+   - Geen dubbele HTML-id's en geen ontbrekende rechtstreeks aangesproken id's.
+   - HTML-bestandsverwijzingen, manifesticonen en startpagina bestaan.
+   - Alle 750 woorden, 36 letters, 300 zinnen en 331 unieke losse zinwoordvormen
+     hebben beschikbare audiokoppelingen voor beide stemmen; ook de
+     reservewoorden zijn gecontroleerd op beschikbare audio.
+   - Alle 750 woorden hebben een Nederlandse vertaling en zijn volgens de
+     Albanese dubbelletterregel bij de juiste hoofdcategorie ingedeeld.
+   - 1.289 audiokoppelingen; geen ontbrekende gekoppelde bestanden.
+   - Alle 2.630 MP3's en 2 WAV's zonder decodeerfout gelezen met FFmpeg bij
+     de oorspronkelijke analyse. Bytevergelijking bevestigt dat deze exacte
+     bestanden ongewijzigd in de definitieve map zijn opgenomen.
+
+2. Schermtests in headless Chromium
+   - Formaten: 320x568, 360x800, 412x915, 568x320, 800x360, 915x412,
+     800x1280 en 1280x800 CSS-pixels.
+   - Alle 750 woorden met en zonder vertaling.
+   - Alle 300 zinnen met en zonder vertaling en met en zonder het grote vak.
+   - Alle 36 letters in oefengroepen.
+   - 23.088 tekstvakmetingen; geen gemeten tekstoverloop in deze controles.
+   - Gemeten verhoudingen van het grote vak versus één zin: circa 2, met
+     uitsluitend subpixelafronding. Vier zinrijen zijn even hoog.
+   - Bedieningshoogten blijven 43/35 px in portrait en 33/28 px in landscape.
+   - Screenshots van de zinnenpagina zijn visueel bekeken.
+
+3. Twintig bedieningstests
+   - Voorbeeld, Stop, Mengen, Zoeken en goed-/foutfeedback voor alle drie
+     oefensoorten; geen JavaScript-fouten in deze tests.
+   - Vertaling aan/uit en werkelijk verdwijnen bij Zoeken/Voorbeeld.
+   - Drie identieke herhalingen bij letters en woorden.
+   - Woord-voor-woordvolgorde: alle woorden, dezelfde woorden opnieuw, hele zin.
+   - Hele zin blijft zichtbaar; Nederlandse vertalingen blijven staan indien aan.
+   - Onderbreken door Home, Voorbeeld of een andere zin.
+   - Snel achter elkaar tikken laat alleen de laatste opdracht voltooien.
+   - Beide stemmen en opslag van de stemkeuze.
+   - Ontbrekende/mislukte audio geeft een melding zonder vastlopende afspeeltaak.
+   - Voor deze regietests zijn audiovoltooiing en wachttijden gesimuleerd om
+     gelijktijdigheid en annulering reproduceerbaar te controleren.
+
+4. Acht PWA-/offlinetests met echte service workers
+   - Installatie van de oorspronkelijke app onder een GitHub-achtig subpad.
+   - Overgang naar de nieuwe app wacht op Bijwerken en herlaadt daarna.
+   - Geen tweede melding voor dezelfde migratie.
+   - Alle twaalf verplichte kernbestanden in de cache.
+   - Een echte MP3 in Chromium volledig afgespeeld en technisch voltooid.
+   - App en woordenlijst laden offline; opgeslagen MP3 ondersteunt bytebereiken.
+     Een niet-opgehaalde MP3 geeft offline een foutrespons, zoals gedocumenteerd.
+   - Volgende versie blijft wachten; oude app blijft zijn actieve versie laden.
+     Na Bijwerken is de nieuwe versie actief; een andere appcache blijft bestaan.
+   - Een volgende release met een niet-ophaalbaar kernbestand wordt niet actief;
+     de werkende versie blijft ook na herladen beschikbaar.
+
+BEPERKINGEN EN BEWUST NIET VERANDERDE INHOUD
+- Echte Samsung-telefoons/tablets en Apple Safari/PWA zijn niet fysiek getest.
+  Hun exacte gedrag is onbekend; Chromium-schermemulatie vervangt die test niet.
+- De uitspraak en betekenis van iedere Albanese opname en iedere vertaling
+  zijn niet taalkundig beoordeeld. Technische decodeerbaarheid bewijst dat niet.
+- De oude reservewoordenlijst deelt woorden anders in dan de Albanese telling
+  van de hoofdlijst. Die bestaande reserve-inhoud is niet herverdeeld of verwijderd.
+  De normale app gebruikt de 750-woordenlijst; deze wordt nu verplicht vooraf
+  gecachet. De reserve wordt alleen gebruikt als de volledige lijst toch niet
+  beschikbaar is, bijvoorbeeld buiten een geslaagde PWA-installatie.
+- Er zijn geen Azure-aanvragen uitgevoerd en de gewijzigde PowerShell-scripts
+  zijn niet in Windows/PowerShell uitgevoerd; ze zijn op hun logica nagekeken.
+- Offlineaudio is beperkt tot reeds opgehaalde opnamen. Lokale browseropslag
+  kan worden gewist. Na een nieuwe versie worden opnamen opnieuw opgehaald.
+- Bij een volgende publicatie moet VERSION in service-worker.js worden verhoogd.
+  De browser kan wijzigingen in overige repositorybestanden niet zelfstandig
+  als nieuwe release herkennen wanneer die worker-versie ongewijzigd blijft.
+
+OPLEVERING
+De ZIP is bedoeld om met behoud van de paden over de repositorybestanden te
+kopiëren. Er zijn geen afhankelijkheden of een buildstap nodig voor de app.
+De ZIP-integriteit en het overeenkomen van de uitgegeven bestanden met de
+gecontroleerde eindmap worden bij het maken van het archief gecontroleerd.

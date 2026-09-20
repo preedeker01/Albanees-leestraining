@@ -1,37 +1,55 @@
-ALBANEES - WOORD VOOR WOORD - SCHONE BASIS
+ALBANESE LEESTRAINING — GECONTROLEERDE VERSIE 2026-09-20-1
 
-Deze versie is uitsluitend voor de Albanese app.
+INSTALLATIE OP GITHUB
+1. Pak de ZIP uit.
+2. Kopieer de inhoud rechtstreeks naar de hoofdmap van de bestaande repository.
+   Vervang gelijknamige bestanden. Kopieer ook de nieuwe app.js en styles.css.
+   Verwijder de map audio NIET. Alle bestaande opnamen worden meegeleverd.
+3. Commit alle bestanden samen en push naar GitHub.
+4. Wacht totdat GitHub Pages de nieuwe bestanden heeft gepubliceerd.
+5. Open de app met internet. Bij een bestaande installatie verschijnt
+   'Nieuwe versie beschikbaar'. Tik op 'Bijwerken'.
 
-Basis:
-- teruggezet naar de door jou aangeleverde laatste goede albanees_pwa_safari-versie
-- teruggezet naar de bijbehorende goede audio-map en 484 Anila + 484 Ilir MP3's
-- bestaande 300 volledige zinnen en hun MP3-koppelingen blijven ongewijzigd
+De ZIP bevat geen .git-map: de bestaande repositorygeschiedenis blijft van jou.
+Er is geen buildstap, npm-installatie of Azure-aanvraag nodig om de app te gebruiken.
+Gebruik de gepubliceerde HTTPS-pagina. Een lokale index.html dubbelklikken is
+geen betrouwbare test van een PWA of van het laden van JSON-bestanden.
 
-Nieuw:
-- tik op een korte zin
-- ieder woord verschijnt groot
-- ongeveer 1 seconde kijktijd
-- dat woord wordt met de gekozen Azure-stem uitgesproken
-- daarna dezelfde woorden nogmaals sneller
-- tenslotte verschijnt en klinkt de volledige bestaande zin
-- Vertalen aan: Nederlandse vertaling blijft zichtbaar, uitspraak blijft dezelfde woord-voor-woord methode
-- tijdens woord-voor-woord is browser/Samsung TTS volledig uitgeschakeld
+WERKING
+- Letters: 12 vakken, tikken voor drie herhalingen, voorbeeld, stop, mengen, zoeken.
+- Woorden: lengtes 3 t/m 7, 12 vakken, dezelfde bediening plus Nederlandse vertaling.
+- Korte zinnen: 4 vakken; tikken start woord-voor-woord, daarna een snellere ronde,
+  daarna de bestaande opname van de volledige zin.
+- De volledige zin blijft in het grote vak staan tot de volgende actie.
+- Zonder groot vak krijgt elke zin 1/4 van de beschikbare vakhoogte.
+- Met groot vak is de verhouding groot vak : zin : zin : zin : zin = 2:1:1:1:1.
+  Tussenruimten worden eerst afgetrokken. Bedieningsknoppen veranderen niet
+  van hoogte bij het tonen of verbergen van het grote vak.
+- De bestaande knophoogten per oriëntatie zijn behouden: portrait 43/35 px
+  (vier knoppen/vertaalknop), landscape 33/28 px.
+- Stop, mengen, zoeken, voorbeeld, een nieuwe keuze en naar het beginscherm gaan
+  annuleren de vorige afspeelopdracht volledig.
+- De uitspraak gebruikt de bestaande MP3-opnamen van Anila of Ilir.
+  Er wordt geen alternatieve browserstem gebruikt als een opname niet werkt.
 
-Voor de 300 zinnen zijn 331 unieke exacte woordvormen nodig.
-In de goede audioset ontbreken daarvan 252.
-Alleen die 252 woorden worden nieuw gemaakt; bestaande mappings worden nooit veranderd.
+OFFLINE
+Na geslaagde installatie zijn de app, beide gegevenslijsten, iconen en
+feedbackgeluiden beschikbaar in de cache. Een volledige MP3 wordt opgeslagen
+wanneer deze wordt opgehaald. Nog niet opgehaalde opnamen zijn offline niet
+beschikbaar. De app downloadt niet automatisch alle 2.630 MP3's.
+Een browser kan lokale opslag wissen; onbeperkte offlinebeschikbaarheid is
+niet gegarandeerd. Na een versie-update moet eerder gebruikte audio opnieuw
+worden opgehaald: daarmee blijven gewijzigde opnamen niet verouderd in de cache.
 
-INSTALLATIE / TEST
-1. Maak voor de zekerheid een kopie van je huidige lokale GitHub-map.
-2. Verwijder in je lokale Albanese repo de huidige map 'audio' en het huidige 'audio-map.json'.
-   Dit voorkomt dat foute v10/v11 MP3's blijven staan.
-3. Kopieer ALLE bestanden en de map 'audio' uit deze ZIP naar de hoofdmap van Albanees-leestraining.
-4. Kopieer Azure Speech KEY 1 naar het Windows-klembord.
-5. Dubbelklik START_WOORD_VOOR_WOORD.bat.
-6. Wacht op: KLAAR EN GECONTROLEERD.
-7. Test bij voorkeur eerst lokaal / controleer de bestanden.
-8. Daarna GitHub Desktop:
-   Summary: Albanese woord voor woord schone versie
-   Commit to main -> Push origin.
+VOLGENDE VERSIES PUBLICEREN
+Verhoog bij iedere inhoudelijke publicatie de constante VERSION bovenaan
+service-worker.js, bijvoorbeeld van 2026-09-20-1 naar 2026-09-21-1.
+Dit geldt ook als alleen een woordenlijst of een MP3 wordt gewijzigd.
+Commit de gewijzigde bestanden en service-worker.js samen.
+De app controleert bij openen, terugkeren naar de app, terugkeer van internet
+en iedere minuut zolang de pagina zichtbaar is. Een nieuwe versie wacht op
+'Bijwerken'; de huidige versie blijft tijdens het wachten actief.
+Publicatievertraging van GitHub Pages en een ontbrekende internetverbinding
+kunnen het verschijnen van de melding vertragen.
 
-NIET PUSHEN als het script 'CONTROLEFOUT' meldt.
+Zie CONTROLE_EN_WIJZIGINGEN.txt voor controledekking en beperkingen.

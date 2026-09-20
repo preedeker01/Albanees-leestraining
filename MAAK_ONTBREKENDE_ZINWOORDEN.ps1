@@ -11,7 +11,7 @@ if(!(Test-Path ".\ontbrekende_zinwoorden.json")){throw "ontbrekende_zinwoorden.j
 if(!(Test-Path ".\audio\anila")){throw "audio\anila ontbreekt."}
 if(!(Test-Path ".\audio\ilir")){throw "audio\ilir ontbreekt."}
 
-Copy-Item ".\audio-map.json" ".\audio-map.VOOR_WOORDVOORWOORD.backup.json" -Force
+
 
 $mapObj=Get-Content -Raw -Encoding UTF8 ".\audio-map.json"|ConvertFrom-Json
 $files=@{}
@@ -39,10 +39,28 @@ Get-ChildItem ".\audio\anila",".\audio\ilir" -Filter "*.mp3" | ForEach-Object {
    if($n -gt $max){$max=$n}
  }
 }
+foreach($entry in $map.files.Values) {
+ foreach($voice in @("anila","ilir")) {
+  if($entry[$voice] -match '/(\d+)\.mp3$') {
+   $n=[int]$Matches[1]
+   if($n -gt $max){$max=$n}
+  }
+ }
+}
 $next=$max+1
 
 $wanted=Get-Content -Raw -Encoding UTF8 ".\ontbrekende_zinwoorden.json"|ConvertFrom-Json
-$todo=@($wanted | Where-Object { -not $map.files.ContainsKey([string]$_) })
+$todo=@($wanted | Where-Object {
+ $entry=$map.files[[string]$_]
+ $incomplete=$false
+ foreach($voice in @("anila","ilir")) {
+  if($null -eq $entry -or -not $entry[$voice]) { $incomplete=$true; continue }
+  $file=[string]$entry[$voice]
+  if(-not (Test-Path -LiteralPath $file -PathType Leaf)) { $incomplete=$true }
+  elseif((Get-Item -LiteralPath $file).Length -lt 100) { $incomplete=$true }
+ }
+ $incomplete
+})
 
 Write-Host ("Ontbrekende woorden die nog gemaakt moeten worden: " + $todo.Count)
 if($todo.Count -eq 0){
@@ -51,6 +69,8 @@ if($todo.Count -eq 0){
 }
 
 Write-Host ""
+$stamp=Get-Date -Format "yyyyMMdd-HHmmss"
+Copy-Item ".\audio-map.json" ".\audio-map.VOOR_WOORDVOORWOORD_$stamp.backup.json"
 Write-Host "Kopieer Azure Speech KEY 1 naar het Windows-klembord."
 Read-Host "Druk daarna op Enter"
 $key=Get-Clipboard -Raw
@@ -78,11 +98,32 @@ foreach($word in $todo){
  $pa="audio/anila/$id.mp3"
  $pi="audio/ilir/$id.mp3"
  Write-Host ("["+$i+"/"+$todo.Count+"] "+$word)
- MakeAudio ([string]$word) $map.voices.anila ".\$pa"
- MakeAudio ([string]$word) $map.voices.ilir ".\$pi"
-
- # Pas NA twee succesvolle MP3's de mapping toevoegen.
- $map.files[[string]$word]=@{anila=$pa;ilir=$pi}
+ $entry=@{}
+ $created=@()
+ try {
+  foreach($voice in @("anila","ilir")) {
+   $oldEntry=$map.files[[string]$word]
+   if($null -ne $oldEntry -and $oldEntry[$voice]) {
+    $old=[string]$oldEntry[$voice]
+    if((Test-Path -LiteralPath $old -PathType Leaf) -and (Get-Item -LiteralPath $old).Length -ge 100) {
+     $entry[$voice]=$old
+     continue
+    }
+   }
+   $path=if($voice -eq "anila"){$pa}else{$pi}
+   if(Test-Path -LiteralPath $path){throw "Bestand bestaat al: $path"}
+   $created+=$path
+   MakeAudio ([string]$word) $map.voices[$voice] $path
+   if(-not (Test-Path -LiteralPath $path -PathType Leaf) -or (Get-Item -LiteralPath $path).Length -lt 100){throw "Geen geldige audio: $path"}
+   $entry[$voice]=$path
+  }
+  # Save each completed pair; an interrupted later request cannot lose earlier work.
+  $map.files[[string]$word]=$entry
+  $map | ConvertTo-Json -Depth 8 | Set-Content -Encoding UTF8 ".\audio-map.json"
+ } catch {
+  foreach($path in $created){if(Test-Path -LiteralPath $path){Remove-Item -LiteralPath $path -Force}}
+  throw
+ }
  $next++
 }
 
@@ -97,7 +138,8 @@ foreach($word in $wanted){
  foreach($voice in @("anila","ilir")){
    $p=$map.files[$w][$voice]
    if(-not $p){$errors+=("Geen "+$voice+" mapping: "+$w);continue}
-   if(-not (Test-Path (".\"+$p))){$errors+=("Bestand ontbreekt: "+$p)}
+   if(-not (Test-Path -LiteralPath $p -PathType Leaf)){$errors+=("Bestand ontbreekt: "+$p)}
+   elseif((Get-Item -LiteralPath $p).Length -lt 100){$errors+=("Audiobestand is te klein: "+$p)}
  }
 }
 foreach($prop in $map.files.GetEnumerator()){

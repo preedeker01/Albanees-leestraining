@@ -65,7 +65,14 @@ if($doel.Count -ne 750) {
 $missing = New-Object System.Collections.Generic.List[string]
 foreach($w in $doel) {
     $e=$map.files[$w]
-    if($null -eq $e -or -not $e.anila -or -not $e.ilir) { $missing.Add($w) }
+    $incomplete=$false
+    foreach($v in @("anila","ilir")) {
+        if($null -eq $e -or -not $e[$v]) { $incomplete=$true; continue }
+        $file=[string]$e[$v]
+        if(-not (Test-Path -LiteralPath $file -PathType Leaf)) { $incomplete=$true }
+        elseif((Get-Item -LiteralPath $file).Length -lt 100) { $incomplete=$true }
+    }
+    if($incomplete) { $missing.Add($w) }
 }
 
 Write-Host ""
@@ -132,6 +139,15 @@ foreach($w in $missing) {
     $temp=@{}
     try {
         foreach($v in @("anila","ilir")) {
+            # Keep any existing, valid recording for this word and voice.
+            $existing=$map.files[$w]
+            if($null -ne $existing -and $existing[$v]) {
+                $old=[string]$existing[$v]
+                if((Test-Path -LiteralPath $old -PathType Leaf) -and (Get-Item -LiteralPath $old).Length -ge 100) {
+                    $temp[$v]=$old
+                    continue
+                }
+            }
             $out="audio\$v\$id.mp3"
             if(Test-Path $out){ throw "Bestand bestaat al: $out" }
             $txt=XmlEscape $w
@@ -148,6 +164,7 @@ foreach($w in $missing) {
         # Koppeling pas toevoegen nadat BEIDE bestanden goed zijn gemaakt.
         $map.files[$w]=@{anila=$temp.anila; ilir=$temp.ilir}
         $gemaakt++
+        $map | ConvertTo-Json -Depth 20 | Set-Content "audio-map.json" -Encoding UTF8
         Write-Host ("[{0}/{1}] {2} -> {3}" -f $gemaakt,$missing.Count,$w,$id)
     } catch {
         foreach($v in @("anila","ilir")) {
@@ -170,7 +187,8 @@ foreach($w in $doel) {
         if($null -eq $e -or -not $e[$v]) { $errors.Add("Ontbrekende mapping: $w / $v"); continue }
         $rel=[string]$e[$v]
         $local=$rel.Replace("/","\")
-        if(-not (Test-Path $local)){ $errors.Add("Bestand ontbreekt: $rel") }
+        if(-not (Test-Path -LiteralPath $local -PathType Leaf)){ $errors.Add("Bestand ontbreekt: $rel") }
+        elseif((Get-Item -LiteralPath $local).Length -lt 100){ $errors.Add("Audiobestand is te klein: $rel") }
     }
 }
 foreach($text in $map.files.Keys) {

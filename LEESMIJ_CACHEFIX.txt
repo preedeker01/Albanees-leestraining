@@ -1,18 +1,23 @@
-CACHEFIX ALBANESE LEESTRAINING
+CACHE EN UPDATES — VERSIE 2026-09-20-1
 
-Vervang in de hoofdmap van Albanees-leestraining alleen:
-1. index.html
-2. service-worker.js
+Deze tekst vervangt de oude instructie om slechts twee bestanden te kopiëren.
+Kopieer nu ALLE bestanden uit de definitieve ZIP naar de repositoryhoofdmap,
+ook de nieuwe app.js en styles.css. Verwijder geen audio.
 
-Daarna GitHub Desktop:
-- Commit to main
-- Push origin
+De service worker installeert de kernbestanden als één set. Als een verplicht
+bestand niet kan worden opgehaald, wordt de nieuwe versie niet actief.
+De knop 'Bijwerken' activeert een klaarstaande update.
+De werkende app blijft zijn eigen versie van HTML, CSS, JavaScript en JSON laden
+zolang de gebruiker de nieuwe versie niet heeft geactiveerd.
 
-De nieuwe service worker:
-- gebruikt een nieuw cacheversienummer;
-- verwijdert oude caches;
-- haalt index.html, audio-map.json en word-data-750.json eerst opnieuw van GitHub;
-- forceert een nieuwe service-worker-updatecontrole.
+Caches zijn aan het adres van deze app én de versie gekoppeld. Oude caches met
+de nieuwe appgebonden naam worden na activatie opgeruimd. Generieke caches uit
+oudere versies worden niet meer geraadpleegd en worden niet blind verwijderd:
+ze kunnen door een andere app op dezelfde website gebruikt worden.
 
-De index zoekt audio hoofdletter-onafhankelijk en Unicode-genormaliseerd:
-Është kan daardoor dezelfde opname gebruiken als është.
+MP3's worden bij gebruik volledig gecachet; deelverzoeken werken ook offline.
+Een MP3 die nog niet is opgehaald, kan zonder internet niet worden afgespeeld.
+
+Bij elke volgende publicatie moet VERSION in service-worker.js worden verhoogd.
+Zie LEESMIJ_EERST.txt. Alleen index.html vervangen zonder een nieuwe worker-versie
+levert bewust geen tussentijdse menging van oude en nieuwe appbestanden op.
